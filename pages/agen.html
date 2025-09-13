@@ -1,0 +1,389 @@
+    <!DOCTYPE html>
+    <html lang="id">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Daftar Agen - Latuae Land</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+    <!-- Inter font (opsional) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        html{-webkit-text-size-adjust:100%}
+        body{font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial}
+        /* Halus saat show/hide panel */
+        .reveal {opacity:0; transform:translateY(10px); transition:opacity .25s ease, transform .25s ease}
+        .reveal.show {opacity:1; transform:none}
+    </style>
+    </head>
+    <body class="bg-slate-50 text-slate-800">
+
+    <!-- Header sederhana -->
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+            <img src="https://dummyimage.com/36x36/0e1b4d/ffffff&text=L" class="h-9 w-9 rounded-lg" alt="Latuae">
+            <h1 class="text-lg font-bold">Latuae Land • Agen</h1>
+        </div>
+        <div class="hidden md:flex items-center gap-3">
+            <input type="text" placeholder="Cari agen, area, kantor…"
+                class="w-64 px-3 py-2 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-600">
+            <button class="px-4 py-2 rounded-lg bg-blue-700 text-white font-semibold hover:bg-blue-800">
+            <i class="fa-solid fa-magnifying-glass mr-2"></i>Cari
+            </button>
+        </div>
+        </div>
+    </header>
+
+    <!-- Konten -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 py-6">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <!-- ===================== -->
+        <!-- Kolom kiri: Kartu    -->
+        <!-- ===================== -->
+        <section class="lg:col-span-2">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+
+            <!-- CARD #1 -->
+            <article
+                class="agent-card bg-white rounded-2xl shadow-sm border border-slate-200 p-4 cursor-pointer hover:shadow-md transition"
+                data-name="Herry Tan"
+                data-verified="true"
+                data-photo="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=512&auto=format&fit=crop"
+                data-company="RAY WHITE SUMMARECON BEKASI"
+                data-corp="Agen Korporat"
+                data-area="Jawa Barat"
+                data-exp="12 Tahun"
+                data-award="4 Award"
+                data-ads="23"
+                data-sold="10"
+                data-rent="5"
+                data-phone="+6281212345678"
+                data-wa="+6281212345678"
+                data-types='["Rumah","Apartemen","Ruko","Tanah"]'
+                data-cities='["Bekasi","Bogor","Jakarta Utara","Jakarta Pusat"]'
+            >
+                <div class="flex items-start gap-4">
+                <img class="h-16 w-16 rounded-xl object-cover"
+                    src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=256&auto=format&fit=crop" alt="Foto Agen">
+                <div class="flex-1">
+                    <div class="flex items-center gap-2">
+                    <h3 class="text-lg font-bold">Herry Tan</h3>
+                    <span class="inline-flex items-center gap-1 text-xs font-semibold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded-full">
+                        <i class="fa-solid fa-badge-check"></i> VERIFIED
+                    </span>
+                    </div>
+                    <p class="text-sm text-slate-600 mt-1">
+                    <span class="font-medium">Agen Korporat</span> • RAY WHITE SUMMARECON BEKASI
+                    </p>
+
+                    <div class="flex flex-wrap items-center gap-2 mt-3 text-slate-600 text-sm">
+                    <span class="inline-flex items-center gap-2 bg-slate-100 px-3 py-1 rounded-full">
+                        <i class="fa-solid fa-location-dot"></i> Jawa Barat
+                    </span>
+                    <span class="inline-flex items-center gap-2 bg-slate-100 px-3 py-1 rounded-full">
+                        <i class="fa-solid fa-briefcase"></i> 12 Tahun
+                    </span>
+                    <span class="inline-flex items-center gap-2 bg-slate-100 px-3 py-1 rounded-full">
+                        <i class="fa-solid fa-trophy"></i> 4 Award
+                    </span>
+                    </div>
+                </div>
+                <img src="https://dummyimage.com/60x60/0e1b4d/ffffff&text=RW"
+                    class="h-12 w-12 rounded-full object-cover" alt="Logo Kantor">
+                </div>
+
+                <div class="grid grid-cols-3 text-center mt-4 rounded-xl border border-slate-200 overflow-hidden">
+                <div class="py-3">
+                    <div class="text-blue-700 text-xl font-extrabold">23</div>
+                    <div class="text-xs text-slate-600">Iklan Tayang</div>
+                </div>
+                <div class="py-3 border-x border-slate-200">
+                    <div class="text-slate-900 text-xl font-extrabold">10</div>
+                    <div class="text-xs text-slate-600">Terjual</div>
+                </div>
+                <div class="py-3">
+                    <div class="text-slate-900 text-xl font-extrabold">5</div>
+                    <div class="text-xs text-slate-600">Tersewa</div>
+                </div>
+                </div>
+
+                <div class="mt-4 flex gap-3">
+                <a class="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2 rounded-xl border border-slate-300 hover:bg-slate-50"
+                    href="tel:+6281212345678">
+                    <i class="fa-solid fa-phone"></i> <span class="hidden sm:inline">+62812 1234 5678</span><span class="sm:hidden">Telepon</span>
+                </a>
+                <a class="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2 rounded-xl bg-emerald-600 text-white hover:bg-emerald-700"
+                    href="https://wa.me/6281212345678" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-whatsapp"></i> Whatsapp
+                </a>
+                </div>
+            </article>
+
+            <!-- CARD #2 -->
+            <article
+                class="agent-card bg-white rounded-2xl shadow-sm border border-slate-200 p-4 cursor-pointer hover:shadow-md transition"
+                data-name="Natalia Asia One"
+                data-verified="true"
+                data-photo="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?q=80&w=512&auto=format&fit=crop"
+                data-company="Asia One Harapan Indah"
+                data-corp="Agen Korporat"
+                data-area="Jawa Barat"
+                data-exp="4 Tahun"
+                data-award="1 Award"
+                data-ads="395"
+                data-sold="60"
+                data-rent="18"
+                data-phone="+628129991111"
+                data-wa="+628129991111"
+                data-types='["Rumah","Tanah","Apartemen","Ruang Usaha","Kost"]'
+                data-cities='["Bekasi","Bogor","Jakarta Utara","Jakarta Pusat"]'
+            >
+                <div class="flex items-start gap-4">
+                <img class="h-16 w-16 rounded-xl object-cover"
+                    src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?q=80&w=256&auto=format&fit=crop" alt="Foto Agen">
+                <div class="flex-1">
+                    <div class="flex items-center gap-2">
+                    <h3 class="text-lg font-bold">Natalia Asia One</h3>
+                    <span class="inline-flex items-center gap-1 text-xs font-semibold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded-full">
+                        <i class="fa-solid fa-badge-check"></i> VERIFIED
+                    </span>
+                    </div>
+                    <p class="text-sm text-slate-600 mt-1">
+                    <span class="font-medium">Agen Korporat</span> • Asia One Harapan Indah
+                    </p>
+
+                    <div class="flex flex-wrap items-center gap-2 mt-3 text-slate-600 text-sm">
+                    <span class="inline-flex items-center gap-2 bg-slate-100 px-3 py-1 rounded-full">
+                        <i class="fa-solid fa-location-dot"></i> Jawa Barat
+                    </span>
+                    <span class="inline-flex items-center gap-2 bg-slate-100 px-3 py-1 rounded-full">
+                        <i class="fa-solid fa-briefcase"></i> 4 Tahun
+                    </span>
+                    <span class="inline-flex items-center gap-2 bg-slate-100 px-3 py-1 rounded-full">
+                        <i class="fa-solid fa-trophy"></i> 1 Award
+                    </span>
+                    </div>
+                </div>
+                <img src="https://dummyimage.com/60x60/bb1e59/ffffff&text=AO"
+                    class="h-12 w-12 rounded-full object-cover" alt="Logo Kantor">
+                </div>
+
+                <div class="grid grid-cols-3 text-center mt-4 rounded-xl border border-slate-200 overflow-hidden">
+                <div class="py-3">
+                    <div class="text-blue-700 text-xl font-extrabold">395</div>
+                    <div class="text-xs text-slate-600">Iklan Tayang</div>
+                </div>
+                <div class="py-3 border-x border-slate-200">
+                    <div class="text-slate-900 text-xl font-extrabold">60</div>
+                    <div class="text-xs text-slate-600">Terjual</div>
+                </div>
+                <div class="py-3">
+                    <div class="text-slate-900 text-xl font-extrabold">18</div>
+                    <div class="text-xs text-slate-600">Tersewa</div>
+                </div>
+                </div>
+
+                <div class="mt-4 flex gap-3">
+                <a class="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2 rounded-xl border border-slate-300 hover:bg-slate-50"
+                    href="tel:+628129991111">
+                    <i class="fa-solid fa-phone"></i> <span class="hidden sm:inline">+62812 9991 1111</span><span class="sm:hidden">Telepon</span>
+                </a>
+                <a class="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2 rounded-xl bg-emerald-600 text-white hover:bg-emerald-700"
+                    href="https://wa.me/628129991111" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-whatsapp"></i> Whatsapp
+                </a>
+                </div>
+            </article>
+
+            </div>
+        </section>
+
+        <!-- ===================== -->
+        <!-- Kolom kanan: Detail   -->
+        <!-- ===================== -->
+        <aside class="bg-white rounded-2xl shadow-sm border border-slate-200 p-5 h-fit sticky top-24 reveal" id="detailPanel">
+            <!-- Placeholder default -->
+            <div id="emptyState">
+            <div class="flex items-center gap-3">
+                <i class="fa-solid fa-id-card text-blue-700 text-2xl"></i>
+                <h2 class="text-lg font-bold">Detail Agen</h2>
+            </div>
+            <p class="text-slate-600 mt-2 text-sm">
+                Klik salah satu kartu agen di sebelah kiri untuk melihat profil lengkap di sini.
+            </p>
+            </div>
+
+            <!-- Konten detail -->
+            <div id="detailContent" class="hidden">
+            <div class="flex items-start gap-4">
+                <img id="dPhoto" class="h-20 w-20 rounded-2xl object-cover" src="" alt="Foto agen">
+                <div class="flex-1">
+                <div class="flex items-center gap-2">
+                    <h3 id="dName" class="text-xl font-extrabold"></h3>
+                    <span id="dVerified" class="hidden inline-flex items-center gap-1 text-xs font-semibold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded-full">
+                    <i class="fa-solid fa-badge-check"></i> VERIFIED
+                    </span>
+                </div>
+                <p id="dCompany" class="text-slate-600 mt-1 text-sm"></p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-4 gap-3 mt-4">
+                <div class="col-span-2 sm:col-span-1 bg-slate-50 rounded-lg p-3 text-center">
+                <div id="dAds" class="text-blue-700 text-xl font-extrabold">0</div>
+                <div class="text-xs text-slate-600">Iklan Tayang</div>
+                </div>
+                <div class="col-span-2 sm:col-span-1 bg-slate-50 rounded-lg p-3 text-center">
+                <div id="dSold" class="text-slate-900 text-xl font-extrabold">0</div>
+                <div class="text-xs text-slate-600">Terjual</div>
+                </div>
+                <div class="col-span-2 sm:col-span-1 bg-slate-50 rounded-lg p-3 text-center">
+                <div id="dRent" class="text-slate-900 text-xl font-extrabold">0</div>
+                <div class="text-xs text-slate-600">Tersewa</div>
+                </div>
+                <div class="col-span-2 sm:col-span-1 bg-slate-50 rounded-lg p-3 text-center">
+                <div id="dExp" class="text-slate-900 text-xl font-extrabold">0</div>
+                <div class="text-xs text-slate-600">Pengalaman</div>
+                </div>
+            </div>
+
+            <div class="mt-4">
+                <h4 class="font-semibold">Spesialisasi</h4>
+                <div id="dTypes" class="mt-2 flex flex-wrap gap-2 text-sm"></div>
+            </div>
+
+            <div class="mt-3">
+                <h4 class="font-semibold">Area Favorit</h4>
+                <div id="dCities" class="mt-2 flex flex-wrap gap-2 text-sm"></div>
+            </div>
+
+            <div class="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <a id="dCall" href="#" class="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-xl border border-slate-300 hover:bg-slate-50">
+                <i class="fa-solid fa-phone"></i> Telepon
+                </a>
+                <a id="dWa" href="#" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-xl bg-emerald-600 text-white hover:bg-emerald-700">
+                <i class="fa-brands fa-whatsapp"></i> Whatsapp
+                </a>
+            </div>
+            </div>
+        </aside>
+        </div>
+    </main>
+
+    <!-- Modal detail (untuk mobile) -->
+    <div id="mobileModal" class="fixed inset-0 bg-black/40 hidden items-end sm:hidden z-50">
+        <div class="bg-white w-full rounded-t-2xl p-5 max-h-[85vh] overflow-y-auto">
+        <div class="flex items-center justify-between mb-3">
+            <h3 class="text-lg font-bold">Detail Agen</h3>
+            <button id="closeModal" class="text-slate-500 hover:text-slate-700">
+            <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+        </div>
+        <div id="mContent"></div>
+        </div>
+    </div>
+
+    <script>
+        const cards = document.querySelectorAll('.agent-card');
+        const panel = document.getElementById('detailPanel');
+        const emptyState = document.getElementById('emptyState');
+        const content = document.getElementById('detailContent');
+
+        // elemen panel
+        const dName = document.getElementById('dName');
+        const dVerified = document.getElementById('dVerified');
+        const dPhoto = document.getElementById('dPhoto');
+        const dCompany = document.getElementById('dCompany');
+        const dAds = document.getElementById('dAds');
+        const dSold = document.getElementById('dSold');
+        const dRent = document.getElementById('dRent');
+        const dExp = document.getElementById('dExp');
+        const dTypes = document.getElementById('dTypes');
+        const dCities = document.getElementById('dCities');
+        const dCall = document.getElementById('dCall');
+        const dWa = document.getElementById('dWa');
+
+        // modal mobile
+        const modal = document.getElementById('mobileModal');
+        const closeModal = document.getElementById('closeModal');
+        const mContent = document.getElementById('mContent');
+
+        function pill(text){
+        const span = document.createElement('span');
+        span.className = "inline-flex items-center gap-2 bg-slate-100 px-3 py-1 rounded-full";
+        span.textContent = text;
+        return span;
+        }
+
+        function renderDetail(el){
+        const data = el.dataset;
+
+        // panel kanan (desktop)
+        dName.textContent = data.name;
+        dVerified.classList.toggle('hidden', !(data.verified === 'true'));
+        dPhoto.src = data.photo;
+        dCompany.textContent = `${data.corp} • ${data.company}`;
+        dAds.textContent = data.ads;
+        dSold.textContent = data.sold;
+        dRent.textContent = data.rent;
+        dExp.textContent = data.exp;
+
+        dTypes.innerHTML = '';
+        try { JSON.parse(data.types).forEach(t => dTypes.appendChild(pill(t))); } catch {}
+        dCities.innerHTML = '';
+        try { JSON.parse(data.cities).forEach(c => dCities.appendChild(pill(c))); } catch {}
+
+        dCall.href = `tel:${data.phone}`;
+        dWa.href = `https://wa.me/${data.wa.replace(/\D/g,'')}`;
+
+        emptyState.classList.add('hidden');
+        content.classList.remove('hidden');
+        panel.classList.add('show');
+
+        // modal untuk mobile
+        const html = document.getElementById('detailPanel').innerHTML
+            .replace('id="detailContent"', '')
+            .replace('id="emptyState"', '')
+            .replace('id="dCall"', 'id="mCall"')
+            .replace('id="dWa"', 'id="mWa"');
+        mContent.innerHTML = html;
+        // hapus area kosong dari clone
+        mContent.querySelector('#emptyState')?.remove();
+        // set link call/wa di clone
+        const mCall = mContent.querySelector('#mCall');
+        const mWa = mContent.querySelector('#mWa');
+        if (mCall) mCall.href = `tel:${data.phone}`;
+        if (mWa) mWa.href = `https://wa.me/${data.wa.replace(/\D/g,'')}`;
+        }
+
+        // klik kartu
+        cards.forEach(card=>{
+        card.addEventListener('click', ()=>{
+            renderDetail(card);
+            if (window.innerWidth < 640) { // < sm
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            }
+        });
+        });
+
+        closeModal.addEventListener('click', ()=>{
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+        });
+
+        // animasi masuk panel
+        window.addEventListener('load', ()=> {
+        setTimeout(()=> panel.classList.add('show'), 150);
+        });
+    </script>
+    </body>
+    </html>
