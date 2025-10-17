@@ -1,10 +1,12 @@
-const BankPartnerSection = () => {
+function BankPartnerSection() {
   const banks = [
-    { id: 1, name: "Bank BCA", logo: "https://upload.wikimedia.org/wikipedia/commons/5/5a/BCA_logo.svg" },
-    { id: 2, name: "Bank Mandiri", logo: "https://upload.wikimedia.org/wikipedia/commons/1/16/Bank_Mandiri_logo.svg" },
-    { id: 3, name: "Bank BRI", logo: "https://upload.wikimedia.org/wikipedia/commons/1/11/Bank_Rakyat_Indonesia_logo.svg" },
-    { id: 4, name: "Bank BTN", logo: "https://upload.wikimedia.org/wikipedia/commons/5/5d/Bank_BTN_logo.svg" },
+    { id: 1, name: "Bank BCA", logo: "/LatuaGroup/uploads/banks/bca.jpeg" },
+    { id: 2, name: "Bank Mandiri", logo: "/LatuaGroup/uploads/banks/mandiri.png" },
+    { id: 3, name: "Bank BRI", logo: "/LatuaGroup/uploads/banks/bri.jpeg" },
+    { id: 4, name: "Bank BNI", logo: "/LatuaGroup/uploads/banks/bni.jpeg" },
   ];
+
+  const defaultLogo = "/LatuaGroup/uploads/banks/default.png"; // fallback logo
 
   return (
     <section className="py-12 px-6 bg-gray-50">
@@ -16,7 +18,7 @@ const BankPartnerSection = () => {
 
         {/* Logo Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 items-center justify-center">
-          {banks.map((bank) => (    
+          {banks.map((bank) => (
             <div
               key={bank.id}
               className="flex items-center justify-center bg-white rounded-xl shadow-md p-4 hover:shadow-lg transition"
@@ -24,7 +26,11 @@ const BankPartnerSection = () => {
               <img
                 src={bank.logo}
                 alt={bank.name}
-                className="h-12 object-contain"
+                className="w-32 h-20 object-contain border border-gray-200 bg-white"
+                onError={(e) => {
+                  console.warn(`⚠️ Logo gagal load: ${bank.logo}, diganti default`);
+                  e.target.src = defaultLogo;
+                }}
               />
             </div>
           ))}
@@ -32,4 +38,4 @@ const BankPartnerSection = () => {
       </div>
     </section>
   );
-};
+}

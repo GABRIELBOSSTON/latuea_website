@@ -35,7 +35,7 @@ if ($hours[0] !== 'Tutup') {
     <div>
       <h4 class="text-lg font-semibold mb-4">Menu</h4>
       <ul class="space-y-2 text-sm text-gray-600">
-        <li><a href="#" class="hover:text-black transition">Cari Properti</a></li>
+        <li><a href="listproperty.php" class="hover:text-black transition">Cari Properti</a></li>
         <li><a href="agen.php#" class="hover:text-black transition">Cari Agen</a></li>
         <li><a href="#" class="hover:text-black transition">Pasarkan Properti</a></li>
       </ul>

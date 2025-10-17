@@ -1,53 +1,128 @@
-const WhyChooseUsSection = () => {
-  return (
-    <section className="bg-white py-20 px-4 sm:px-6">
-      <div className="max-w-6xl mx-auto relative">
+class WhyChooseUsSection extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      activeSlide: 0
+    };
 
-        {/* === JUDUL === */}
-        <div className="text-center mb-16">
-          <p className="text-gray-500 text-lg">Kami</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mt-1">
-            Kenapa Memilih Kami?
-          </h2>
-          <div className="w-24 h-1 bg-blue-600 mx-auto mt-4 rounded-full"></div>
-        </div>
+    this.setSlide = this.setSlide.bind(this);
+  }
 
-        {/* === KONTEN === */}
-        <div className="relative flex flex-col md:flex-row items-center justify-center">
-          
+  setSlide(index) {
+    this.setState({ activeSlide: index });
+  }
+
+  render() {
+    const { activeSlide } = this.state;
+
+    const slides = [
+      // === SLIDE 1: Kenapa Memilih Kami ===
+      (
+        <div className="flex flex-col md:flex-row items-center justify-center gap-8 min-h-[500px] px-6">
           {/* Foto */}
-          <div className="relative z-20 w-full md:w-1/2 lg:w-5/12">
+          <div className="w-full md:w-1/2">
             <img
               src="/LatuaGroup/uploads/team.PNG"
-              alt="Tim Lavera Land"
-              className="rounded-xl shadow-2xl w-full h-[420px] object-cover"
+              alt="Tim Latuae Land"
+              className="rounded-xl shadow-2xl w-full h-[350px] object-cover"
             />
           </div>
 
           {/* Box teks */}
-          <div className="relative z-10 w-full md:w-3/4 bg-[#1F2937] text-white rounded-xl shadow-2xl mt-[-50px] md:mt-0 md:ml-[-120px]">
-            <div className="relative p-8 pt-16 md:p-12 lg:p-16">
-              
-              {/* Icon kutip */}
-              <div className="absolute top-[-30px] left-6 md:left-[140px] text-yellow-400 text-[120px] font-black opacity-70 z-0">
-                &rdquo;
-              </div>
-
-              {/* Wrapper teks untuk geser lebih ke kanan */}
-              <div className="relative z-10 md:ml-40 lg:ml-56">
-                <p className="text-lg leading-relaxed">
-                  Kami adalah perusahaan properti yang berkomitmen menghadirkan hunian premium 
-                  dengan lokasi strategis, desain modern, serta fasilitas eksklusif yang mendukung 
-                  gaya hidup berkelas. Dengan pengalaman dan reputasi terpercaya, setiap proyek kami 
-                  tidak hanya menjadi tempat tinggal nyaman bagi keluarga, tetapi juga aset investasi 
-                  bernilai tinggi di masa depan.
-                </p>
-              </div>
+          <div className="bg-[#1F2937] text-white rounded-xl shadow-2xl w-full md:w-1/2 p-10 relative">
+            <div className="absolute top-[-20px] left-6 text-yellow-400 text-[100px] font-black opacity-50">
+              &rdquo;
             </div>
+            <p className="relative z-10 text-lg leading-relaxed">
+              Kami adalah perusahaan properti yang berkomitmen menghadirkan hunian
+              premium dengan lokasi strategis, desain modern, serta fasilitas
+              eksklusif yang mendukung gaya hidup berkelas.
+            </p>
+          </div>
+        </div>
+      ),
+
+      // === SLIDE 2: Apa Kata Agen ===
+      (
+        <div className="flex flex-col md:flex-row items-center justify-center gap-8 min-h-[500px] px-6">
+          {/* Foto Agen */}
+          <div className="w-full md:w-1/2">
+            <img
+              src="/LatuaGroup/uploads/team.PNG"
+              alt="Foto Agen"
+              className="rounded-xl shadow-2xl w-full h-[350px] object-cover"
+            />
+          </div>
+
+          {/* Box Testimoni */}
+          <div className="bg-[#1F2937] text-white rounded-xl shadow-2xl w-full md:w-1/2 p-10 relative">
+            <div className="absolute top-[-20px] left-6 text-yellow-400 text-[100px] font-black opacity-50">
+              &rdquo;
+            </div>
+            <p className="relative z-10 text-lg leading-relaxed">
+              “Bergabung dengan Latuae Land memberikan saya banyak pengalaman
+              berharga. Training yang diberikan sangat lengkap, mulai dari
+              pengetahuan properti, teknik penjualan, hingga cara berkomunikasi
+              dengan klien.”
+            </p>
+            <p className="mt-6 font-semibold">– Andi Pratama</p>
+            <p className="text-sm">Property Consultant</p>
+          </div>
+        </div>
+      ),
+    ];
+
+    return (
+      <section className="bg-white py-20 px-4 sm:px-6 relative overflow-hidden">
+        {/* Judul dinamis */}
+        <div className="text-center mb-12">
+          {activeSlide === 0 ? (
+            <>
+              <p className="text-gray-500 text-lg">KAMI</p>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mt-1">
+                KENAPA MEMILIH KAMI?
+              </h2>
+            </>
+          ) : (
+            <>
+              <p className="text-gray-500 text-lg">AGEN</p>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mt-1">
+                APA KATA AGEN
+              </h2>
+            </>
+          )}
+          <div className="w-24 h-1 bg-blue-600 mx-auto mt-4 rounded-full"></div>
+        </div>
+
+        {/* SLIDER WRAPPER */}
+        <div className="relative w-full max-w-6xl mx-auto overflow-hidden">
+          <div
+            className="flex transition-transform duration-700 ease-in-out"
+            style={{ transform: `translateX(-${activeSlide * 100}%)` }}
+          >
+            {slides.map((slide, index) => (
+              <div key={index} className="w-full flex-shrink-0">
+                {slide}
+              </div>
+            ))}
           </div>
         </div>
 
-      </div>
-    </section>
-  );
-};
+        {/* Dot Navigation */}
+        <div className="flex justify-center mt-8 space-x-3">
+          {slides.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => this.setSlide(index)}
+              className={`w-4 h-4 rounded-full transition ${
+                index === activeSlide ? "bg-blue-600" : "bg-gray-300"
+              }`}
+            ></button>
+          ))}
+        </div>
+      </section>
+    );
+  }
+}
+
+

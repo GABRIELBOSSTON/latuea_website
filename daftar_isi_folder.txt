@@ -1,1777 +1,263 @@
- Volume in drive C has no label.
- Volume Serial Number is F266-B50E
+ Volume in drive C is Windows-SSD
+ Volume Serial Number is E8CF-4C4B
 
  Directory of C:\xampp\htdocs\LatuaGroup
 
-09/06/2025  05:25 PM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM    <DIR>          .git
-09/06/2025  06:18 PM               140 .htaccess
-09/06/2025  12:50 AM    <DIR>          admin
-09/06/2025  12:50 AM    <DIR>          api
-09/06/2025  06:20 PM                 0 daftar_isi_folder.txt
-09/06/2025  12:50 AM    <DIR>          includes
-09/06/2025  05:47 PM    <DIR>          pages
-09/06/2025  12:50 AM    <DIR>          react
-09/06/2025  03:15 PM                 0 tes.html
-09/06/2025  05:28 PM    <DIR>          uploads
-09/06/2025  12:50 AM    <DIR>          user
-               3 File(s)            140 bytes
+09/25/2025  04:40 PM    <DIR>          .
+09/22/2025  03:20 PM    <DIR>          ..
+09/15/2025  10:22 AM                 0 .htaccess
+09/15/2025  10:22 AM    <DIR>          admin
+09/15/2025  10:22 AM    <DIR>          api
+09/25/2025  04:40 PM                 0 daftar_isi_folder.txt
+09/15/2025  10:22 AM    <DIR>          includes
+09/15/2025  10:22 AM    <DIR>          pages
+09/25/2025  04:32 PM    <DIR>          react
+09/15/2025  10:22 AM                 0 tes.html
+09/18/2025  09:09 PM    <DIR>          uploads
+09/15/2025  10:22 AM    <DIR>          user
+               3 File(s)              0 bytes
 
  Directory of C:\xampp\htdocs\LatuaGroup\.git
 
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  05:25 PM    <DIR>          ..
-09/06/2025  12:50 AM            12,288 .COMMIT_EDITMSG.swp
-09/06/2025  12:50 AM                16 COMMIT_EDITMSG
-09/06/2025  12:50 AM               453 config
-09/06/2025  12:50 AM                73 description
-09/06/2025  12:50 AM               101 FETCH_HEAD
-09/06/2025  12:50 AM                21 HEAD
-09/06/2025  12:50 AM    <DIR>          hooks
-09/06/2025  12:50 AM             3,574 index
-09/06/2025  12:50 AM    <DIR>          info
-09/06/2025  12:50 AM    <DIR>          logs
-09/06/2025  12:50 AM    <DIR>          objects
-09/06/2025  12:50 AM                41 ORIG_HEAD
-09/06/2025  12:50 AM    <DIR>          refs
-               8 File(s)         16,567 bytes
+09/25/2025  04:40 PM    <DIR>          ..
+09/15/2025  10:24 AM               344 config
+09/15/2025  10:21 AM                73 description
+09/25/2025  04:39 PM               108 FETCH_HEAD
+09/15/2025  10:22 AM                21 HEAD
+09/15/2025  10:21 AM    <DIR>          hooks
+09/15/2025  10:22 AM             4,333 index
+09/15/2025  10:21 AM    <DIR>          info
+09/15/2025  10:22 AM    <DIR>          logs
+09/25/2025  04:39 PM    <DIR>          objects
+09/15/2025  10:22 AM               112 packed-refs
+09/15/2025  10:22 AM    <DIR>          refs
+               6 File(s)          4,991 bytes
 
  Directory of C:\xampp\htdocs\LatuaGroup\.git\hooks
 
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               478 applypatch-msg.sample
-09/06/2025  12:50 AM               896 commit-msg.sample
-09/06/2025  12:50 AM             4,726 fsmonitor-watchman.sample
-09/06/2025  12:50 AM               189 post-update.sample
-09/06/2025  12:50 AM               424 pre-applypatch.sample
-09/06/2025  12:50 AM             1,649 pre-commit.sample
-09/06/2025  12:50 AM               416 pre-merge-commit.sample
-09/06/2025  12:50 AM             1,374 pre-push.sample
-09/06/2025  12:50 AM             4,898 pre-rebase.sample
-09/06/2025  12:50 AM               544 pre-receive.sample
-09/06/2025  12:50 AM             1,492 prepare-commit-msg.sample
-09/06/2025  12:50 AM             2,783 push-to-checkout.sample
-09/06/2025  12:50 AM             2,308 sendemail-validate.sample
-09/06/2025  12:50 AM             3,650 update.sample
+09/15/2025  10:21 AM    <DIR>          .
+09/15/2025  10:21 AM               478 applypatch-msg.sample
+09/15/2025  10:21 AM               896 commit-msg.sample
+09/15/2025  10:21 AM             4,726 fsmonitor-watchman.sample
+09/15/2025  10:21 AM               189 post-update.sample
+09/15/2025  10:21 AM               424 pre-applypatch.sample
+09/15/2025  10:21 AM             1,649 pre-commit.sample
+09/15/2025  10:21 AM               416 pre-merge-commit.sample
+09/15/2025  10:21 AM             1,374 pre-push.sample
+09/15/2025  10:21 AM             4,898 pre-rebase.sample
+09/15/2025  10:21 AM               544 pre-receive.sample
+09/15/2025  10:21 AM             1,492 prepare-commit-msg.sample
+09/15/2025  10:21 AM             2,783 push-to-checkout.sample
+09/15/2025  10:21 AM             2,308 sendemail-validate.sample
+09/15/2025  10:21 AM             3,650 update.sample
               14 File(s)         25,827 bytes
 
  Directory of C:\xampp\htdocs\LatuaGroup\.git\info
 
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               240 exclude
+09/15/2025  10:21 AM    <DIR>          .
+09/15/2025  10:21 AM               240 exclude
                1 File(s)            240 bytes
 
  Directory of C:\xampp\htdocs\LatuaGroup\.git\logs
 
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             4,740 HEAD
-09/06/2025  12:50 AM    <DIR>          refs
-               1 File(s)          4,740 bytes
+09/15/2025  10:22 AM    <DIR>          .
+09/15/2025  10:22 AM               214 HEAD
+09/15/2025  10:22 AM    <DIR>          refs
+               1 File(s)            214 bytes
 
  Directory of C:\xampp\htdocs\LatuaGroup\.git\logs\refs
 
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM    <DIR>          heads
-08/07/2025  05:44 PM    <DIR>          remotes
+09/15/2025  10:22 AM    <DIR>          .
+09/15/2025  10:22 AM    <DIR>          ..
+09/15/2025  10:22 AM    <DIR>          heads
+09/15/2025  10:22 AM    <DIR>          remotes
                0 File(s)              0 bytes
 
  Directory of C:\xampp\htdocs\LatuaGroup\.git\logs\refs\heads
 
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             4,338 main
-               1 File(s)          4,338 bytes
+09/15/2025  10:22 AM    <DIR>          .
+09/15/2025  10:22 AM    <DIR>          ..
+09/15/2025  10:22 AM               214 main
+               1 File(s)            214 bytes
 
  Directory of C:\xampp\htdocs\LatuaGroup\.git\logs\refs\remotes
 
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM    <DIR>          origin
+09/15/2025  10:22 AM    <DIR>          .
+09/15/2025  10:22 AM    <DIR>          ..
+09/15/2025  10:22 AM    <DIR>          origin
                0 File(s)              0 bytes
 
  Directory of C:\xampp\htdocs\LatuaGroup\.git\logs\refs\remotes\origin
 
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               155 HEAD
-09/06/2025  12:50 AM             3,869 main
-               2 File(s)          4,024 bytes
+09/15/2025  10:22 AM    <DIR>          .
+09/15/2025  10:22 AM    <DIR>          ..
+09/15/2025  10:22 AM               214 HEAD
+               1 File(s)            214 bytes
 
  Directory of C:\xampp\htdocs\LatuaGroup\.git\objects
 
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM    <DIR>          00
-09/06/2025  12:50 AM    <DIR>          02
-09/06/2025  12:50 AM    <DIR>          06
-09/06/2025  12:50 AM    <DIR>          07
-09/06/2025  12:50 AM    <DIR>          08
-09/06/2025  12:50 AM    <DIR>          0c
-09/06/2025  12:50 AM    <DIR>          0d
-09/06/2025  12:50 AM    <DIR>          0e
-09/06/2025  12:50 AM    <DIR>          0f
-09/06/2025  12:50 AM    <DIR>          10
-09/06/2025  12:50 AM    <DIR>          12
-09/06/2025  12:50 AM    <DIR>          13
-09/06/2025  12:50 AM    <DIR>          14
-09/06/2025  12:50 AM    <DIR>          15
-09/06/2025  12:50 AM    <DIR>          16
-09/06/2025  12:50 AM    <DIR>          19
-09/06/2025  12:50 AM    <DIR>          1a
-09/06/2025  12:50 AM    <DIR>          1d
-09/06/2025  12:50 AM    <DIR>          1e
-09/06/2025  12:50 AM    <DIR>          1f
-09/06/2025  12:50 AM    <DIR>          20
-09/06/2025  12:50 AM    <DIR>          23
-09/06/2025  12:50 AM    <DIR>          27
-09/06/2025  12:50 AM    <DIR>          28
-09/06/2025  12:50 AM    <DIR>          29
-09/06/2025  12:50 AM    <DIR>          2a
-09/06/2025  12:50 AM    <DIR>          2b
-09/06/2025  12:50 AM    <DIR>          2c
-09/06/2025  12:50 AM    <DIR>          2d
-09/06/2025  12:50 AM    <DIR>          2e
-09/06/2025  12:50 AM    <DIR>          2f
-09/06/2025  12:50 AM    <DIR>          30
-09/06/2025  12:50 AM    <DIR>          31
-09/06/2025  12:50 AM    <DIR>          32
-09/06/2025  12:50 AM    <DIR>          33
-09/06/2025  12:50 AM    <DIR>          36
-09/06/2025  12:50 AM    <DIR>          37
-09/06/2025  12:50 AM    <DIR>          38
-09/06/2025  12:50 AM    <DIR>          39
-09/06/2025  12:50 AM    <DIR>          3b
-09/06/2025  12:50 AM    <DIR>          3d
-09/06/2025  12:50 AM    <DIR>          3e
-09/06/2025  12:50 AM    <DIR>          3f
-09/06/2025  12:50 AM    <DIR>          40
-09/06/2025  12:50 AM    <DIR>          41
-09/06/2025  12:50 AM    <DIR>          45
-09/06/2025  12:50 AM    <DIR>          47
-09/06/2025  12:50 AM    <DIR>          48
-09/06/2025  12:50 AM    <DIR>          49
-09/06/2025  12:50 AM    <DIR>          4c
-09/06/2025  12:50 AM    <DIR>          4d
-09/06/2025  12:50 AM    <DIR>          4e
-09/06/2025  12:50 AM    <DIR>          4f
-09/06/2025  12:50 AM    <DIR>          51
-09/06/2025  12:50 AM    <DIR>          53
-09/06/2025  12:50 AM    <DIR>          54
-09/06/2025  12:50 AM    <DIR>          55
-09/06/2025  12:50 AM    <DIR>          57
-09/06/2025  12:50 AM    <DIR>          5a
-09/06/2025  12:50 AM    <DIR>          5b
-09/06/2025  12:50 AM    <DIR>          5c
-09/06/2025  12:50 AM    <DIR>          5d
-09/06/2025  12:50 AM    <DIR>          5e
-09/06/2025  12:50 AM    <DIR>          5f
-09/06/2025  12:50 AM    <DIR>          60
-09/06/2025  12:50 AM    <DIR>          61
-09/06/2025  12:50 AM    <DIR>          62
-09/06/2025  12:50 AM    <DIR>          63
-09/06/2025  12:50 AM    <DIR>          66
-09/06/2025  12:50 AM    <DIR>          67
-09/06/2025  12:50 AM    <DIR>          68
-09/06/2025  12:50 AM    <DIR>          6a
-09/06/2025  12:50 AM    <DIR>          6b
-09/06/2025  12:50 AM    <DIR>          6c
-09/06/2025  12:50 AM    <DIR>          6d
-09/06/2025  12:50 AM    <DIR>          6f
-09/06/2025  12:50 AM    <DIR>          71
-09/06/2025  12:50 AM    <DIR>          72
-09/06/2025  12:50 AM    <DIR>          74
-09/06/2025  12:50 AM    <DIR>          75
-09/06/2025  12:50 AM    <DIR>          77
-09/06/2025  12:50 AM    <DIR>          78
-09/06/2025  12:50 AM    <DIR>          79
-09/06/2025  12:50 AM    <DIR>          7a
-09/06/2025  12:50 AM    <DIR>          7b
-09/06/2025  12:50 AM    <DIR>          7c
-09/06/2025  12:50 AM    <DIR>          7d
-09/06/2025  12:50 AM    <DIR>          7e
-09/06/2025  12:50 AM    <DIR>          7f
-09/06/2025  12:50 AM    <DIR>          80
-09/06/2025  12:50 AM    <DIR>          82
-09/06/2025  12:50 AM    <DIR>          83
-09/06/2025  12:50 AM    <DIR>          84
-09/06/2025  12:50 AM    <DIR>          85
-09/06/2025  12:50 AM    <DIR>          86
-09/06/2025  12:50 AM    <DIR>          87
-09/06/2025  12:50 AM    <DIR>          88
-09/06/2025  12:50 AM    <DIR>          89
-09/06/2025  12:50 AM    <DIR>          8a
-09/06/2025  12:50 AM    <DIR>          8d
-09/06/2025  12:50 AM    <DIR>          8e
-09/06/2025  12:50 AM    <DIR>          8f
-09/06/2025  12:50 AM    <DIR>          94
-09/06/2025  12:50 AM    <DIR>          96
-09/06/2025  12:50 AM    <DIR>          97
-09/06/2025  12:50 AM    <DIR>          9a
-09/06/2025  12:50 AM    <DIR>          9b
-09/06/2025  12:50 AM    <DIR>          9d
-09/06/2025  12:50 AM    <DIR>          9f
-09/06/2025  12:50 AM    <DIR>          a1
-09/06/2025  12:50 AM    <DIR>          a3
-09/06/2025  12:50 AM    <DIR>          a5
-09/06/2025  12:50 AM    <DIR>          a6
-09/06/2025  12:50 AM    <DIR>          a7
-09/06/2025  12:50 AM    <DIR>          a9
-09/06/2025  12:50 AM    <DIR>          ab
-09/06/2025  12:50 AM    <DIR>          af
-09/06/2025  12:50 AM    <DIR>          b0
-09/06/2025  12:50 AM    <DIR>          b2
-09/06/2025  12:50 AM    <DIR>          b3
-09/06/2025  12:50 AM    <DIR>          b6
-09/06/2025  12:50 AM    <DIR>          b7
-09/06/2025  12:50 AM    <DIR>          b9
-09/06/2025  12:50 AM    <DIR>          bb
-09/06/2025  12:50 AM    <DIR>          bc
-09/06/2025  12:50 AM    <DIR>          bd
-09/06/2025  12:50 AM    <DIR>          be
-09/06/2025  12:50 AM    <DIR>          bf
-09/06/2025  12:50 AM    <DIR>          c0
-09/06/2025  12:50 AM    <DIR>          c1
-09/06/2025  12:50 AM    <DIR>          c2
-09/06/2025  12:50 AM    <DIR>          c3
-09/06/2025  12:50 AM    <DIR>          c4
-09/06/2025  12:50 AM    <DIR>          c5
-09/06/2025  12:50 AM    <DIR>          c6
-09/06/2025  12:50 AM    <DIR>          c9
-09/06/2025  12:50 AM    <DIR>          ca
-09/06/2025  12:50 AM    <DIR>          cb
-09/06/2025  12:50 AM    <DIR>          cd
-09/06/2025  12:50 AM    <DIR>          ce
-09/06/2025  12:50 AM    <DIR>          cf
-09/06/2025  12:50 AM    <DIR>          d0
-09/06/2025  12:50 AM    <DIR>          d2
-09/06/2025  12:50 AM    <DIR>          d5
-09/06/2025  12:50 AM    <DIR>          d6
-09/06/2025  12:50 AM    <DIR>          d7
-09/06/2025  12:50 AM    <DIR>          d9
-09/06/2025  12:50 AM    <DIR>          db
-09/06/2025  12:50 AM    <DIR>          dc
-09/06/2025  12:50 AM    <DIR>          dd
-09/06/2025  12:50 AM    <DIR>          de
-09/06/2025  12:50 AM    <DIR>          e1
-09/06/2025  12:50 AM    <DIR>          e2
-09/06/2025  12:50 AM    <DIR>          e3
-09/06/2025  12:50 AM    <DIR>          e4
-09/06/2025  12:50 AM    <DIR>          e5
-09/06/2025  12:50 AM    <DIR>          e6
-09/06/2025  12:50 AM    <DIR>          e8
-09/06/2025  12:50 AM    <DIR>          ea
-09/06/2025  12:50 AM    <DIR>          eb
-09/06/2025  12:50 AM    <DIR>          ed
-09/06/2025  12:50 AM    <DIR>          ef
-09/06/2025  12:50 AM    <DIR>          f0
-09/06/2025  12:50 AM    <DIR>          f1
-09/06/2025  12:50 AM    <DIR>          f2
-09/06/2025  12:50 AM    <DIR>          f3
-09/06/2025  12:50 AM    <DIR>          f4
-09/06/2025  12:50 AM    <DIR>          f5
-09/06/2025  12:50 AM    <DIR>          f7
-09/06/2025  12:50 AM    <DIR>          fa
-09/06/2025  12:50 AM    <DIR>          fc
-09/06/2025  12:50 AM    <DIR>          ff
-08/07/2025  05:30 PM    <DIR>          info
-08/07/2025  05:30 PM    <DIR>          pack
+09/25/2025  04:39 PM    <DIR>          .
+09/15/2025  10:21 AM    <DIR>          info
+09/15/2025  10:22 AM    <DIR>          pack
                0 File(s)              0 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\00
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM            22,615 db777d63ced7d80503761b0f7321a6b32783f5
-               1 File(s)         22,615 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\02
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM            26,756 a727cb270a0d9168fc0dee2e5e560764a9d996
-               1 File(s)         26,756 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\06
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM                93 60a12f917e62b91ab4f4368edf88ead700a6d1
-09/06/2025  12:50 AM             1,101 c43ba74c91ad8d5f77454d985d8843e2772683
-               2 File(s)          1,194 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\07
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM         2,085,439 2880660d1800f17d8bdf8d31f949a53cd69665
-09/06/2025  12:50 AM             3,802 66549af3bdeb96d04f69e3157b1200744a4715
-09/06/2025  12:50 AM               338 e121446b4961c7c26ae13cd00c636a16499a5e
-               3 File(s)      2,089,579 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\08
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               120 2625c84339c120988398802295e08633340ddc
-               1 File(s)            120 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\0c
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM                68 8b5ab705dad9ecae4eaf5f54e8bdb396125db7
-09/06/2025  12:50 AM               144 ff56890fdaebc92c7573250f0fd6f136674683
-               2 File(s)            212 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\0d
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM                54 01740ef67ca4a05ffaaf3585ffd7dbdc49e29c
-09/06/2025  12:50 AM             1,456 647157379fe9126f2761c4e586844c09d2103f
-               2 File(s)          1,510 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\0e
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               590 bf617af96e8e740f5a5e74b64cd9d742150c21
-09/06/2025  12:50 AM               575 d8253b6db7f045cea1f89004e46493a6cc462b
-               2 File(s)          1,165 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\0f
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               860 00555678c2c566e1d744e89a4f9769a2eb577a
-               1 File(s)            860 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\10
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               514 fe927fdeadfc51accd5b732e69b17a649127e9
-               1 File(s)            514 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\12
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             1,614 4f02b4d206d826358e9e532b8bfae233e1b9e7
-09/06/2025  12:50 AM               751 d25b2ea90314a1406c0259c20cda2bd4985c65
-09/06/2025  12:50 AM               807 e2675b4bf3c4da2ff7b1cce893df29036bee88
-               3 File(s)          3,172 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\13
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               189 108f3cc6c723b2d61f970c2141357cb5dcfea9
-               1 File(s)            189 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\14
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             1,538 c7403daccd6e335d359d4fba95cde75cf9f29e
-               1 File(s)          1,538 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\15
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               888 0932f4ef9891b53f4f24fb5750930c207ee1af
-09/06/2025  12:50 AM                89 4bbdeb404decbd59e401149e8fb93331bf982a
-09/06/2025  12:50 AM               299 f06f42904d5caa4bde68bac0d196ae9e8b568d
-               3 File(s)          1,276 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\16
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               263 808782ebf54d0f2b37c36b4f4658657da8ae92
-               1 File(s)            263 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\19
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             7,864 6c6e30a4dec63e3fc1a393d457ff71d8e482d8
-09/06/2025  12:50 AM               691 a975e5fa1645d1dd52dc486ec273251232b98d
-               2 File(s)          8,555 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\1a
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             7,990 3daa7372825d347fe9f1f1d51fcf358270d96b
-               1 File(s)          7,990 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\1d
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             2,803 52ec49f1c6781c216a88c8e9cd2b3d4d2a1be5
-               1 File(s)          2,803 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\1e
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             2,893 6b706982ffd9d4f22e07bb8795996b37d41b78
-09/06/2025  12:50 AM             7,010 6d3c7d1508e12cc67413a284188a44eb3ff8f1
-               2 File(s)          9,903 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\1f
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               120 76e4662f500ed81fd9720486a1697d95333355
-               1 File(s)            120 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\20
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               120 b64db88d489d8fa17230ff29167977e5f65fb0
-               1 File(s)            120 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\23
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM           752,179 a3216e741bca711d593ab07875cc78541e252e
-09/06/2025  12:50 AM             1,426 a913d649c31c66cf0991654a34c01f46ade3c4
-               2 File(s)        753,605 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\27
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               157 fea805e09776002e65ffe43acad7c3b24f1a05
-               1 File(s)            157 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\28
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM                54 c3e979e6faddec6451e77e710b7780f98dcc7a
-               1 File(s)             54 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\29
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               657 113070c6152306d02aef557f8b2cb056d445c5
-               1 File(s)            657 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\2a
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM            68,331 41bb6941c07a8ac80479f579858a55b35294e7
-               1 File(s)         68,331 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\2b
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             4,423 1a63f9d8de7497d8fd0eca58bdd5f0554098da
-09/06/2025  12:50 AM             2,788 3064f0c1c9082db1d7508efa4852804b6e5e94
-09/06/2025  12:50 AM             3,144 6a3ec2719c8c89885d58f85fc22de48a4c76d4
-09/06/2025  12:50 AM               159 ad03ea780f7b0cfb3b571380baebf1b4418069
-               4 File(s)         10,514 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\2c
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             2,338 1b71215a451d3ef2f75f375c64353699b3f924
-09/06/2025  12:50 AM            13,307 297a04cce6155de2dde3ca4f1c9fd1cf841aea
-09/06/2025  12:50 AM             3,582 4f6058890d50ff9b04e0553d3148d1b64b6608
-09/06/2025  12:50 AM               557 adcd1b3d84cf307f0fde31ac64a23876c6ac8a
-               4 File(s)         19,784 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\2d
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             5,226 5aaf8a47a24b8a7fe02da2bb14216c5f2ae0e1
-               1 File(s)          5,226 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\2e
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             4,668 1f422ecf8bbed2047c4edda43526acede3c1be
-09/06/2025  12:50 AM               541 c3192d9cc0f28f0b4144f35c8e9d7d2222f66c
-               2 File(s)          5,209 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\2f
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               120 08229d16ea5ba45237d42df3109788f2b575aa
-               1 File(s)            120 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\30
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             3,786 6897a7707f180804297ab52382baf0b4019a64
-               1 File(s)          3,786 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\31
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             6,826 6647c1a68da3ec4a505b923728d1ff1b0f27fa
-               1 File(s)          6,826 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\32
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             6,926 1ba67fe0c905f105f0ed55d3465edc6f2adb4a
-09/06/2025  12:50 AM               128 3fc24a5ae499d3ab21047601c1e1ee0dceda38
-09/06/2025  12:50 AM             3,817 52ae5cb1d1096758dfeccb051a3bb842133b84
-               3 File(s)         10,871 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\33
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               160 1d138e0bb451a71228677bc420398ab6d54ced
-09/06/2025  12:50 AM             2,992 b838913b7175cf497084423ac2f7b41a4d28d2
-09/06/2025  12:50 AM             1,067 e595b52e596beeda85d0802f0a361fc507e431
-               3 File(s)          4,219 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\36
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM                87 741993775a6be2f3cd5a2b279d5612e91097b9
-09/06/2025  12:50 AM               171 b282138ba0d9b3606286c9c8fac08f16fa5dc3
-               2 File(s)            258 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\37
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               160 83d1f98bc6ab04a327b1c2b5bd7409a9851c0a
-               1 File(s)            160 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\38
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             5,135 9afb5a531b09c47e200aab8d6d5428b2a6a13f
-09/06/2025  12:50 AM             1,350 b4b301804cb1238055b8f891726b3f98b30ed1
-               2 File(s)          6,485 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\39
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM                54 09e202f42675cd7161079fdf7b90a53e173ef8
-               1 File(s)             54 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\3b
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             1,474 534551014598e7b77febd1e134ebbbbabd45c9
-09/06/2025  12:50 AM               242 9d8b24b6f8e8c0861872280c1e027e0596dcba
-               2 File(s)          1,716 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\3d
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               120 d1ab9e8938490e68c47650496ee073c538dc66
-09/06/2025  12:50 AM             5,932 f5b6b16b1b5e67b9ab0b5838d8d2d34b639500
-               2 File(s)          6,052 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\3e
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               299 f3c92f1e1a995532926264e8c7fe76d28d53de
-               1 File(s)            299 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\3f
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               528 0ced6807c7ec5b263479825d0f52ef2aaf91bf
-09/06/2025  12:50 AM             1,349 2e43b0ba93619ffd8d972cd0d1e9184ea4eccb
-               2 File(s)          1,877 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\40
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM           137,784 e0c3a9ab703bdb916a5ea6be27d7325c2a701b
-               1 File(s)        137,784 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\41
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               524 2586b1545451a6e6e60ea47ca65fac425f0814
-               1 File(s)            524 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\45
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               224 85ee1b237971937c3b7f814702b58bf5c8dfd1
-               1 File(s)            224 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\47
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             1,620 a10a61b5334d180afcf2cb47e3731ed300c016
-               1 File(s)          1,620 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\48
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             6,813 375a39b8ec3b9fd11fd48f239c79705fd07531
-09/06/2025  12:50 AM               160 92bac607cdef7382b574e81a3bf880a47a8b9b
-               2 File(s)          6,973 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\49
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               177 0dff6b17fc10378c5277cd27921173fd1a540b
-09/06/2025  12:50 AM             1,764 8ad2c8c6223e21bf25b80f7b6f9f9f5303a1fb
-               2 File(s)          1,941 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\4c
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               717 c066ff701b1a8e9fb791803b9636a1ee3271ba
-               1 File(s)            717 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\4d
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM                93 80193af67928ad1ea6d1597f7db6948e716824
-09/06/2025  12:50 AM               539 99fec483704d1e8959a57700aa7c7d14d466a3
-09/06/2025  12:50 AM               540 a25d082880221182a68084e9ea613b38a11f27
-09/06/2025  12:50 AM                83 fc3e95c9677addca5506f46a9f906e921a7cf1
-               4 File(s)          1,255 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\4e
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             2,955 53b7e8db6464eb0e9359beea0c73b95aa1ba4c
-09/06/2025  12:50 AM               984 d0bf13a4bb64b29224666001db608c85b934f5
-               2 File(s)          3,939 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\4f
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             3,919 2120534f6235b8f042c11756d2140ea7506086
-09/06/2025  12:50 AM             3,154 a79a424712c58e7bfdd28d0ca0796ea5c7164e
-09/06/2025  12:50 AM               116 f839dfb3cf2babfc3bb57ddd082544310e13d9
-               3 File(s)          7,189 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\51
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               337 935a916d735332a3b4800717a026568a489bfe
-               1 File(s)            337 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\53
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM         1,372,570 19acc66834427e9a746359a276bc1356494fd2
-09/06/2025  12:50 AM             5,902 4b8735e3ac2a4320f8d10afb8d63268352687f
-               2 File(s)      1,378,472 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\54
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             1,049 e1584d800ebaac2f64911a4a20e52609530fcb
-               1 File(s)          1,049 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\55
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               224 dc93c7bf3956454d4139a8b9a044ee82d497b9
-               1 File(s)            224 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\57
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM                77 21880b6cece5e162be6f6f54365cca8e26e90a
-               1 File(s)             77 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\5a
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               187 7df889cbe620ef0fbb47a395c87800b88a4d77
-               1 File(s)            187 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\5b
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               120 7e07a9d54fc197eae5b1bdb2a382572f929d6a
-09/06/2025  12:50 AM                54 bd3a9f7da061171e635d16bc0fec619a67751c
-               2 File(s)            174 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\5c
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM                77 fbdd77940529304305c26af8fb2435149b3307
-               1 File(s)             77 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\5d
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             5,404 2f660c095e70aa19c97eca0d95a99a6b5d8568
-09/06/2025  12:50 AM                93 a28ad50d936598a86158131796001f95140f51
-               2 File(s)          5,497 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\5e
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               172 02e40c492e1b589c60ab5216f90d0745772a3e
-09/06/2025  12:50 AM             2,902 6afe84f9543fce880b20de6c7fffe7d56203d8
-09/06/2025  12:50 AM             2,166 cf3c3c5abad6e901ca620a777c02a0528ffa6c
-               3 File(s)          5,240 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\5f
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               780 0a9e20c440ba0ee3207f4852ca68be1fda55ee
-               1 File(s)            780 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\60
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               174 70cd4796773519375aa19e3cd7884acedc8239
-09/06/2025  12:50 AM               903 76e8bcc7292940fd06d4c77dfc0f47bb55a85b
-09/06/2025  12:50 AM             1,715 fcf3845ddc5175957360a9faec801495e88567
-               3 File(s)          2,792 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\61
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               527 dfc5e53dfaa34a926dfef8161c9c29e4eb643f
-               1 File(s)            527 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\62
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               124 a5cac5e456f9ed24ac82bb2618303320d22489
-09/06/2025  12:50 AM               311 e7242da2f9f271068575c6f6f88fd0c9e55a47
-               2 File(s)            435 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\63
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               282 40cfa921b937d16b1a2490edbddf0c63e2db3b
-09/06/2025  12:50 AM             4,547 5e389a427c4a32f631c2c5c39d6ba6bd09392c
-09/06/2025  12:50 AM             8,472 e03453bd35b14c203d67b4a21300c2b61f010e
-               3 File(s)         13,301 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\66
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             1,993 9b45d5038956bc769511b1553fbb212bed14d4
-               1 File(s)          1,993 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\67
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             1,649 2c1e9686e0dd94dc4f996db82acff9511797e4
-               1 File(s)          1,649 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\68
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               540 a1d9bd58289083d6d172198ee863889d42b317
-09/06/2025  12:50 AM               159 add53ea858e0593362923db88e259b31a4600b
-               2 File(s)            699 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\6a
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             7,122 172aa39402ec708a25f98a8fad4b06c6b1ba5d
-09/06/2025  12:50 AM            11,835 a8c5cd5cc8debb03e113cf23288bf9d6b8151f
-09/06/2025  12:50 AM               538 bb872601440af38c64c8cbdd2092ecb3b9f817
-               3 File(s)         19,495 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\6b
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             1,593 13fbf141a226197060efc866677c1850ef37c8
-               1 File(s)          1,593 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\6c
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             7,137 a61bf569e2ee5bccee4467311999685697e28e
-               1 File(s)          7,137 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\6d
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             3,994 024c7deb74b7475c62521093c2b6c505b14e63
-09/06/2025  12:50 AM             2,650 769423545c6f1bb1afee959c5cae9a950236a3
-               2 File(s)          6,644 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\6f
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               177 356dbcb5b585c34eff8b1c98c25c648caebfde
-09/06/2025  12:50 AM             2,302 b44cfcaaeecfeed46dba6be0ff83ad10d28bff
-               2 File(s)          2,479 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\71
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               337 a2fa361022f01e8472d4c271aadd92cf3e17c0
-               1 File(s)            337 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\72
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               198 41d194a3bd3271a7ef0f49112ade52fb7200e5
-09/06/2025  12:50 AM             1,795 af3e9177e69d789cbd48bb3503a614a4cea35a
-09/06/2025  12:50 AM               117 ef69d6c8b5501b77375eb9d178e96459ca96be
-               3 File(s)          2,110 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\74
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               178 ad50a6ce540cddc84183cc0d09851c8faec4d1
-               1 File(s)            178 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\75
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             1,044 2fabe07d36ff26f2cd4a2bf05a0e3159b7389a
-               1 File(s)          1,044 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\77
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               175 8aae2e9ccb2de306c6faa9571448b7e09a7dd8
-               1 File(s)            175 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\78
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             3,143 1e57a7c1c1efbd60c0f4ca55c7104fc9dc9ff8
-09/06/2025  12:50 AM                93 332ef15bcd70f76c4aff2d4c7bc898c668a312
-09/06/2025  12:50 AM               580 fef6396cdd60e1043a9617d97fb296ac1c3ca0
-               3 File(s)          3,816 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\79
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               120 2f9e4e751f31f2ac9ea277aa8f4104c5f573f7
-09/06/2025  12:50 AM               119 bc99c065dc37c7f592d1e17911491709da0bdd
-               2 File(s)            239 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\7a
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               120 7cb2e1bf56079d7edf13d41b5f388831393d9f
-09/06/2025  12:50 AM             1,909 a7ef0d6fa79212944faf13fb05dedc6098b260
-09/06/2025  12:50 AM             3,298 c7984b695d9429c4eb05ea71156500e689bd4f
-               3 File(s)          5,327 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\7b
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             1,329 53e670710998c2c8321300f58996975ff2e695
-09/06/2025  12:50 AM               197 878ae2819fa7100c68207620c73f7657997d62
-09/06/2025  12:50 AM             1,491 c6b4e01077696e2b76bead4596dc26c7cb6e0e
-               3 File(s)          3,017 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\7c
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             4,000 779b71140c477cd91e60ce70403cb87156b035
-               1 File(s)          4,000 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\7d
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             3,877 c955ff7bca44307cd176d6a7cf8dc00c0d1eca
-               1 File(s)          3,877 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\7e
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               464 37357a55409ce7e601fbd5a838cbc3956a240d
-               1 File(s)            464 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\7f
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               941 714e34b3a3882f89d3fdb36d658240874a956e
-               1 File(s)            941 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\80
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               281 4948d8c900016b8c1833883387578c37375163
-09/06/2025  12:50 AM               152 5d5f8ea2ad99cc54f1f61bf5664fedc59c2ec0
-09/06/2025  12:50 AM               807 71fbab20e07dac76f8d48d4f57a9df91ee018c
-               3 File(s)          1,240 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\82
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               123 790090d8e4a33bcddf6ac35a6dbcf4224a38c8
-               1 File(s)            123 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\83
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM            13,465 5e3fc246caec356b4e65335d990f149cfd5926
-09/06/2025  12:50 AM             1,057 60c8949022849d835ef5f134209641e22d689d
-               2 File(s)         14,522 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\84
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               261 25db697dbdbc27d0e5d31d475f597f12180fb5
-09/06/2025  12:50 AM             9,364 3b3d321301fcd1f2b9e468a97ea14d07d48b4d
-09/06/2025  12:50 AM             1,995 a31f62a2615654703e1ab5794d43ab12996455
-               3 File(s)         11,620 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\85
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             1,183 28b7d5d64464dd001816504101fb64cc3257db
-09/06/2025  12:50 AM             1,998 7d4812210ac1cda16a7691a57db1b2df7bac3d
-               2 File(s)          3,181 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\86
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               169 07c059780be831ea809deafd05ce0795c30f4c
-09/06/2025  12:50 AM             2,481 07ce1475156c4c8d6273d1609d2804a44f6cee
-               2 File(s)          2,650 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\87
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             1,721 8cf2b0c0a466d62fd7d5fae0451b4608e85cc3
-09/06/2025  12:50 AM             8,224 99b67653bfed9b34dde538fff4fe0b0966af61
-               2 File(s)          9,945 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\88
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               512 21b54ce3f4c149c490ac49ebcda0d8ec019c13
-09/06/2025  12:50 AM             6,827 587bb1be03189b62c3b81c2e1e5fdd8c0b5feb
-09/06/2025  12:50 AM             7,162 ac8acc21e30f0b2394c8ee04692584fcb49958
-09/06/2025  12:50 AM             7,489 e465a8db46fb3ec7d361e01cecd1401789b818
-               4 File(s)         21,990 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\89
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             1,578 6c2434b81f00ccfff3ae8a92bba541d087042c
-09/06/2025  12:50 AM             1,346 81f21aced02203df6e4d095cf37c5943bf2eab
-09/06/2025  12:50 AM               541 a6e75daa024f6f78cf0b50869b132cfe30ec4e
-               3 File(s)          3,465 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\8a
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               282 b63c2a8504ca726cb8a10fc496d7b684ebfd70
-               1 File(s)            282 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\8d
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM         2,056,465 b238a832b8af54e1f362c09e7c8f25ab6e7ba9
-               1 File(s)      2,056,465 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\8e
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               171 b34f18a56878bff0e8f50a95f845d5a4d0add6
-               1 File(s)            171 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\8f
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             8,715 7788e3a9438d5f3e3c7ef40fa24e30fad3ffa7
-09/06/2025  12:50 AM             3,173 9cc3cd02cb1725e2b5bb09a70118d2643869e4
-09/06/2025  12:50 AM             2,785 f010326b6fc4eb75120725e04b4c63a85e9059
-               3 File(s)         14,673 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\94
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             1,705 16fc39b636e07f32b3ea9de4536ccb4fcb5ad1
-               1 File(s)          1,705 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\96
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               306 0cbb4e8b148873ce41808062d30b099738a280
-09/06/2025  12:50 AM             5,904 3ba7f310530a055713c6225b77611bd956ce54
-               2 File(s)          6,210 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\97
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM            15,143 55fb90f684c725408f4dc258e3be8f4caed29c
-09/06/2025  12:50 AM               262 ddc63c28f04ab0a2bdd0fa13391fdfb2945bc7
-09/06/2025  12:50 AM           199,355 f8f8ac35fc5100185e7e6766646530ec837063
-               3 File(s)        214,760 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\9a
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             3,232 d8b7f2f0bfbc0a1a5111c3c4e0f7d28dd08e2e
-09/06/2025  12:50 AM             3,255 d8bee0a06b17173eaf51f78ed3f8ae9db7be94
-               2 File(s)          6,487 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\9b
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               745 a41f399ce538f8657ad981f7a02dca2c8c46c9
-               1 File(s)            745 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\9d
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM                90 87c12a0b17a325cc29193f0548b613d7cd8e0b
-               1 File(s)             90 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\9f
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               126 85deaa933d4307506e8684c11472c22dc4bceb
-               1 File(s)            126 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\a1
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               513 a61303f6f772ba5b6b7679da857ce3303c8b35
-               1 File(s)            513 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\a3
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM            61,763 06ab5f80531f4c7b3661d92786ccb3ef25ac48
-               1 File(s)         61,763 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\a5
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               159 c0fea044eca5c6a715481deb870ccdf456e2f9
-               1 File(s)            159 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\a6
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             1,779 e8e703c5ef967cd85e6055e357fd7f5703621a
-               1 File(s)          1,779 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\a7
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM            54,294 4cd360d829f866e8e5e08f4f931c3f1b2e8799
-               1 File(s)         54,294 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\a9
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               176 6d718ba1da25eb42dd906dd29dcc7106e8a0f3
-               1 File(s)            176 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\ab
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM                89 fc6c2967c24c8063185ee47e97dfd6e59f7c09
-               1 File(s)             89 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\af
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               184 473986b488a66c77c3cfaf0deb17df409c3a23
-09/06/2025  12:50 AM               161 ff27175630c4ed02baade871ef053821c03270
-               2 File(s)            345 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\b0
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               173 67323e8bee57e2f423177912f2a39e233ee534
-               1 File(s)            173 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\b2
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               174 b72c71f3fe16895cbe3336d7d1dd12159c6f50
-               1 File(s)            174 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\b3
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               495 d3ada26fbb0d5f28ae64f09d98be86827e6197
-               1 File(s)            495 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\b6
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             5,695 ee3cec97ed0b9f69f6fa20ef8486f48b58a93b
-               1 File(s)          5,695 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\b7
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               172 035520cc9a94f746b08b5a072f3ba0cfc85bf9
-               1 File(s)            172 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\b9
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM                98 8aba92876c1e5c866e0aad156abc04284cb2b4
-09/06/2025  12:50 AM               695 b0bdd7f9473282a16d8e83a9fc81eb33a9d3e2
-               2 File(s)            793 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\bb
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             2,379 1ef4e08f6680dca2046a9ff56b731a16f1ad62
-09/06/2025  12:50 AM             1,687 2d69066fc7427f575ce9036276b2dcd4393cb4
-09/06/2025  12:50 AM           168,740 30c30506c943c6dd06a1a77283c6b506fc1d6f
-09/06/2025  12:50 AM               159 a2a5ca2a21ee51ca86fa41557eb37ff2562aec
-09/06/2025  12:50 AM               741 feb6bdb0eefe7d88c42a5f4ec11998d33efc82
-               5 File(s)        173,706 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\bc
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             5,914 1e27a3617b83af5b820e2417392f68cba703b5
-09/06/2025  12:50 AM             5,666 2cb2e076bf8bf703eb461a8192590f737d8141
-09/06/2025  12:50 AM               161 ed2b85bf0c1ac7e41a0a39671cecffcd937b22
-               3 File(s)         11,741 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\bd
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               187 656030ee5ddaf2750c8c93ff730a1c9ab056f8
-               1 File(s)            187 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\be
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               647 57ae95d19678bedd943950e3966b792d87d481
-               1 File(s)            647 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\bf
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               632 a3186f8693ffef3e57c928883158f857ad2218
-               1 File(s)            632 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\c0
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             9,752 473d2cf54d2eb7a608509b1396a0b0cce356df
-09/06/2025  12:50 AM            93,723 ab7bcda5625e645de982f0b3414222b7210e80
-               2 File(s)        103,475 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\c1
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM            35,007 b88fd26bc029262254ea034a1d1e2ebee52d74
-09/06/2025  12:50 AM               150 be668cd6b9021a56677224d9663e8183783a8c
-09/06/2025  12:50 AM            12,961 e64cceec55ab0a23770d27f615d0c9566803e9
-               3 File(s)         48,118 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\c2
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             1,478 d3b0b0473fd845b72fa2fec639ca11fffaff8c
-               1 File(s)          1,478 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\c3
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               152 a0ec288c6cc9bdd779154b4e348272eb63e22f
-09/06/2025  12:50 AM             6,758 f5c48ad45607487b984c97a40da1570c8e3907
-               2 File(s)          6,910 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\c4
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               120 3da5cd3736706b89be6f4ef93de65ac4aeb4c3
-09/06/2025  12:50 AM               172 f0feb789b25c6fd4760d5b3586547e8be9415d
-               2 File(s)            292 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\c5
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             9,443 c5addf6e23df6be53b7bd0733277a3dd873fea
-               1 File(s)          9,443 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\c6
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               487 710632d05c8e6749c7c93594d4e819c1f58060
-09/06/2025  12:50 AM               893 962bd765d9675651288cf61cc2940b7eda3153
-               2 File(s)          1,380 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\c9
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             1,020 0bf40d41974693d56fdc1420ef77fda1534c0e
-09/06/2025  12:50 AM             1,802 1a2b0b549ee4c37868290ef2e2dda301586418
-09/06/2025  12:50 AM             4,102 324f4b05d600f4b89cbcfa0444e4067a27a8ed
-09/06/2025  12:50 AM               159 a84767f280559a99b70fafc05e80805ab572be
-09/06/2025  12:50 AM               754 eda7bab38746241f1e83f85f64d25014a54827
-               5 File(s)          7,837 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\ca
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               528 4255d82c982a3783ce9373f0f5f7c59c1f6648
-09/06/2025  12:50 AM               306 98a2c7bc10234efbd6f65b89c0a08a858ccc98
-09/06/2025  12:50 AM               626 eefc2d13729e3e9651981b5af5089f8e21e098
-               3 File(s)          1,460 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\cb
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             1,787 21d4fd368085c0bdbc67d5a5a5924a7b89b2f4
-09/06/2025  12:50 AM               305 99130e0fdd54169ddb0d5cfc373eb9a44fe4cc
-               2 File(s)          2,092 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\cd
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             1,075 0167cd2a86c4eb81caab7739d9622f2713ea90
-09/06/2025  12:50 AM                93 7aa4d2adcd210672ce2298efc904a2cf636c48
-               2 File(s)          1,168 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\ce
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM                94 2b071d3b60bde8ad7fe949f38aeae29ce65599
-09/06/2025  12:50 AM             7,044 49e25a31c8d07598af31f35e1b478ee231514b
-09/06/2025  12:50 AM               570 dc41bf1b822ddbb36e8a5e94b8548b45792459
-09/06/2025  12:50 AM               840 f8619beb69f417f5889274acced7a2a03e3ccc
-               4 File(s)          8,548 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\cf
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               120 70f033df9ddb8fa8b01bc8e83e926a9f22c3f9
-09/06/2025  12:50 AM             2,538 7983f6a9db5becf30d9bf9e2d0eebdfd0f6687
-               2 File(s)          2,658 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\d0
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM                92 09b977f491e7b0e2cfb7009a10dc549db628fb
-09/06/2025  12:50 AM             7,995 407fe341b53886a79646d6927c25b7b01be7ba
-               2 File(s)          8,087 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\d2
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               183 34d40e307850792df064e356ea8eb018a004b8
-09/06/2025  12:50 AM             8,918 4de44af155548825791599c493477fc66cdb6a
-09/06/2025  12:50 AM               808 ea3d44513cb838124f1d414f5062b905d86a8a
-               3 File(s)          9,909 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\d5
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               514 a3d57b8b6c36a5eb18a25b99bdf335a0240c6a
-               1 File(s)            514 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\d6
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             3,031 4f9f1611a42acfbbf3dbc226a73bcae07f6ca8
-09/06/2025  12:50 AM               120 7057d725562a8b22dacff1512b02b60822f6eb
-09/06/2025  12:50 AM               623 9df19a9ed8b386a6ac5af52d227eb87c1b4d21
-               3 File(s)          3,774 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\d7
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM                93 eeda898806ad44dd8a6b64b30e0a188f0169da
-               1 File(s)             93 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\d9
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             4,699 244ef8553270e72b36866f627dffdf80137c00
-09/06/2025  12:50 AM               918 cb028cacf9780c4aca61bfd5692341a9b62f57
-               2 File(s)          5,617 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\db
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               182 1bffd138debc9e60445190a3823d0f0f7b043a
-09/06/2025  12:50 AM               809 c92041fb2051c66e97aa2fd270607661ee298b
-               2 File(s)            991 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\dc
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               116 06d3e65f2dca2aeaaa7989888fdebd3e9bd829
-09/06/2025  12:50 AM            63,183 aa59253c7a4f19a85ef71fffe6b233233165c7
-               2 File(s)         63,299 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\dd
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             2,454 a37aa488248dc10ee465bb9a98685633bc21f5
-               1 File(s)          2,454 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\de
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               160 3fc0e2d9887537bf1567f032889204b1e6d7da
-               1 File(s)            160 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\e1
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             1,355 9c33d5b6e7bf9a61d55d895665a6852be25daf
-               1 File(s)          1,355 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\e2
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             3,231 0fdd688f34c5d9d09b7a57a7b66b2bc2f709cb
-09/06/2025  12:50 AM             1,030 484dd17299b092bff2449d8e9d2a13424f155d
-09/06/2025  12:50 AM               120 87d0c06ba072e8065a4ab7de5a625265251f31
-               3 File(s)          4,381 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\e3
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               104 aa4ceb704d12f3e0d52fd504fb6d2a5219eeaa
-               1 File(s)            104 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\e4
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               175 3c7eaa728df3e582c212c917faae340f8a2277
-09/06/2025  12:50 AM               976 449f1dfe54bed638d4a335906f00e490780bb8
-               2 File(s)          1,151 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\e5
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             1,512 08076fb3cf8554ec2b68f6d8c9b3d819260acd
-               1 File(s)          1,512 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\e6
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM                15 9de29bb2d1d6434b8b29ae775ad8c2e48c5391
-09/06/2025  12:50 AM             1,333 9fd5ad988bd18a6d2cd55998142a1d01823143
-09/06/2025  12:50 AM             3,287 bd6f61439fd54ccac77ff4c882149f5e4a395b
-               3 File(s)          4,635 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\e8
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             3,954 4ebbd2bcf81bf72ec59c603026e91bb3b024a7
-09/06/2025  12:50 AM             1,759 b42b553ed584e156e736387e3dae5d10f081f9
-               2 File(s)          5,713 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\ea
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               540 0c1b4ee5814afb9f26b94ffb4c22935821da46
-09/06/2025  12:50 AM               774 a9977ac595776eae153ca3d23da53696f125a2
-               2 File(s)          1,314 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\eb
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               650 2384a6091530d0948cb6dd998c536f943f63ba
-               1 File(s)            650 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\ed
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               696 71beea811358c4eaed9b92546111ad93d7643c
-09/06/2025  12:50 AM               966 9b2be33ebecb899e2d38f808a9862ff78201e3
-09/06/2025  12:50 AM               120 a5349383d061bc4c3fe7f0a66e35adbb36d983
-09/06/2025  12:50 AM               194 e44f8b35d4f2d2ee88249bda948a5ed2f4c7b6
-               4 File(s)          1,976 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\ef
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               914 1c50397ec5888e1b061fb4709cefd986336b45
-               1 File(s)            914 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\f0
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               120 96965ebe476f4cd2763c601030d5f9a1ba19a0
-               1 File(s)            120 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\f1
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             1,636 3afbd3d09349734eb87a39e93e04a912da8dd5
-09/06/2025  12:50 AM             2,372 bfe2dd135e519ff0689956325a1f48e2602c6e
-               2 File(s)          4,008 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\f2
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             1,440 c127d8673a8133848bd97ece4e4487dcfd58ef
-               1 File(s)          1,440 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\f3
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             2,482 355964931d4294aa2fb038f6bcaec9cbcc4f81
-               1 File(s)          2,482 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\f4
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               707 2ec1001c875d2be3beb6219947750078860797
-               1 File(s)            707 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\f5
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               243 8d65c982a2d31b8d34e2406fdf3debfab50cb3
-               1 File(s)            243 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\f7
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               311 240146ab98bd6ea8f49f81f101c3f1499947ce
-               1 File(s)            311 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\fa
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               538 b3c435b00a768c3d5c5a3fadcd42e2ae882514
-               1 File(s)            538 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\fc
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM               352 815053450637a89d281566f0a5c1da19080faa
-               1 File(s)            352 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\ff
-
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM             1,717 2281efa2fc3f9ea6222356235dcf51363d2bcc
-09/06/2025  12:50 AM               978 88674fd0692c5a307171ad61a120952b363992
-09/06/2025  12:50 AM             1,511 991232d007906fd9ff457ffc9e08e1917d4a88
-               3 File(s)          4,206 bytes
 
  Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\info
 
-08/07/2025  05:30 PM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
+09/15/2025  10:21 AM    <DIR>          .
+09/25/2025  04:39 PM    <DIR>          ..
                0 File(s)              0 bytes
 
  Directory of C:\xampp\htdocs\LatuaGroup\.git\objects\pack
 
-08/07/2025  05:30 PM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-               0 File(s)              0 bytes
+09/15/2025  10:22 AM    <DIR>          .
+09/25/2025  04:39 PM    <DIR>          ..
+09/15/2025  10:22 AM             2,528 pack-2f22f308d149f5fc0ea4e0d53fdca8e3e8179757.idx
+09/15/2025  10:22 AM        22,462,242 pack-2f22f308d149f5fc0ea4e0d53fdca8e3e8179757.pack
+09/15/2025  10:22 AM               260 pack-2f22f308d149f5fc0ea4e0d53fdca8e3e8179757.rev
+               3 File(s)     22,465,030 bytes
 
  Directory of C:\xampp\htdocs\LatuaGroup\.git\refs
 
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM    <DIR>          heads
-09/06/2025  12:50 AM    <DIR>          remotes
-08/07/2025  05:30 PM    <DIR>          tags
+09/15/2025  10:22 AM    <DIR>          .
+09/15/2025  10:22 AM    <DIR>          heads
+09/15/2025  10:22 AM    <DIR>          remotes
+09/15/2025  10:21 AM    <DIR>          tags
                0 File(s)              0 bytes
 
  Directory of C:\xampp\htdocs\LatuaGroup\.git\refs\heads
 
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM                41 main
+09/15/2025  10:22 AM    <DIR>          .
+09/15/2025  10:22 AM    <DIR>          ..
+09/15/2025  10:22 AM                41 main
                1 File(s)             41 bytes
 
  Directory of C:\xampp\htdocs\LatuaGroup\.git\refs\remotes
 
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM    <DIR>          origin
+09/15/2025  10:22 AM    <DIR>          .
+09/15/2025  10:22 AM    <DIR>          ..
+09/25/2025  04:39 PM    <DIR>          origin
                0 File(s)              0 bytes
 
  Directory of C:\xampp\htdocs\LatuaGroup\.git\refs\remotes\origin
 
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
-09/06/2025  12:50 AM                30 HEAD
-09/06/2025  12:50 AM                41 main
-               2 File(s)             71 bytes
+09/25/2025  04:39 PM    <DIR>          .
+09/15/2025  10:22 AM    <DIR>          ..
+09/15/2025  10:22 AM                30 HEAD
+               1 File(s)             30 bytes
 
  Directory of C:\xampp\htdocs\LatuaGroup\.git\refs\tags
 
-08/07/2025  05:30 PM    <DIR>          .
-09/06/2025  12:50 AM    <DIR>          ..
+09/15/2025  10:21 AM    <DIR>          .
+09/15/2025  10:22 AM    <DIR>          ..
                0 File(s)              0 bytes
 
  Directory of C:\xampp\htdocs\LatuaGroup\admin
 
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  05:25 PM    <DIR>          ..
-09/06/2025  12:50 AM             1,635 add_agent.php
-09/06/2025  12:50 AM             4,267 add_property.php
-09/06/2025  12:50 AM             2,100 agents.php
-09/06/2025  12:50 AM                 0 delete_agent.php
-09/06/2025  12:50 AM               588 delete_property.php
-09/06/2025  12:50 AM             2,480 edit_property.php
-09/06/2025  12:50 AM             1,689 index.php
-09/06/2025  12:50 AM             3,225 properties.php
-09/06/2025  12:50 AM             2,097 upload_property.php
+09/15/2025  10:22 AM    <DIR>          .
+09/25/2025  04:40 PM    <DIR>          ..
+09/15/2025  10:22 AM             1,635 add_agent.php
+09/15/2025  10:22 AM             4,267 add_property.php
+09/15/2025  10:22 AM             2,100 agents.php
+09/15/2025  10:22 AM                 0 delete_agent.php
+09/15/2025  10:22 AM               588 delete_property.php
+09/15/2025  10:22 AM             2,480 edit_property.php
+09/15/2025  10:22 AM             1,689 index.php
+09/15/2025  10:22 AM             3,225 properties.php
+09/15/2025  10:22 AM             2,097 upload_property.php
                9 File(s)         18,081 bytes
 
  Directory of C:\xampp\htdocs\LatuaGroup\api
 
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  05:25 PM    <DIR>          ..
-09/06/2025  12:50 AM             1,117 get_properties.php
-09/06/2025  12:50 AM                 0 get_property.php
+09/15/2025  10:22 AM    <DIR>          .
+09/25/2025  04:40 PM    <DIR>          ..
+09/15/2025  10:22 AM             1,117 get_properties.php
+09/15/2025  10:22 AM                 0 get_property.php
                2 File(s)          1,117 bytes
 
  Directory of C:\xampp\htdocs\LatuaGroup\includes
 
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  05:25 PM    <DIR>          ..
-09/06/2025  12:50 AM               324 db_connect.php
-09/06/2025  12:50 AM             3,066 footer.php
-09/06/2025  05:04 PM            10,710 header.php
-               3 File(s)         14,100 bytes
+09/15/2025  10:22 AM    <DIR>          .
+09/25/2025  04:40 PM    <DIR>          ..
+09/15/2025  10:22 AM               324 db_connect.php
+09/15/2025  10:22 AM             3,074 footer.php
+09/15/2025  10:22 AM            10,719 header.php
+               3 File(s)         14,117 bytes
 
  Directory of C:\xampp\htdocs\LatuaGroup\pages
 
-09/06/2025  05:47 PM    <DIR>          .
-09/06/2025  05:25 PM    <DIR>          ..
-09/06/2025  05:26 PM            14,070 about.php
-09/06/2025  06:00 PM             4,697 agen.html
-09/06/2025  12:50 AM             5,525 agen.php
-09/06/2025  05:34 PM             7,749 contact.php
-09/06/2025  06:14 PM             5,685 detail_property.php
-09/06/2025  02:42 PM             2,373 index.php
-09/06/2025  12:50 AM             2,968 office.php
-09/06/2025  12:50 AM             7,864 search_results.php
-09/06/2025  12:50 AM             9,927 sell_property.php
-               9 File(s)         60,858 bytes
+09/15/2025  10:22 AM    <DIR>          .
+09/25/2025  04:40 PM    <DIR>          ..
+09/15/2025  10:22 AM            14,070 about.php
+09/15/2025  10:22 AM            19,355 agen.html
+09/15/2025  10:22 AM            12,618 agen.php
+09/15/2025  10:22 AM             7,738 contact.php
+09/18/2025  08:33 PM             7,144 detail_property.php
+09/15/2025  10:22 AM             2,373 index.php
+09/15/2025  10:22 AM             6,180 office.php
+09/15/2025  10:22 AM             7,864 search_results.php
+09/15/2025  10:22 AM             9,927 sell_property.php
+               9 File(s)         87,269 bytes
 
  Directory of C:\xampp\htdocs\LatuaGroup\react
 
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  05:25 PM    <DIR>          ..
-09/06/2025  12:50 AM               358 App.js
-09/06/2025  12:50 AM             1,375 BankPartnerSection.js
-09/06/2025  04:54 PM             1,676 HeroSearch.js
-09/06/2025  12:50 AM             2,528 ProjectSection.js
-09/06/2025  12:50 AM             1,573 PropertyCard.js
-09/06/2025  12:50 AM             2,171 PropertyList.js
-09/06/2025  12:50 AM             2,210 WhyChooseUsSection.js
-               7 File(s)         11,891 bytes
+09/25/2025  04:32 PM    <DIR>          .
+09/25/2025  04:40 PM    <DIR>          ..
+09/25/2025  04:32 PM             2,220 ActivitySection.js
+09/25/2025  04:33 PM               419 App.js
+09/15/2025  10:22 AM             1,375 BankPartnerSection.js
+09/15/2025  10:22 AM             1,676 HeroSearch.js
+09/15/2025  10:22 AM             2,528 ProjectSection.js
+09/15/2025  10:22 AM             1,573 PropertyCard.js
+09/15/2025  10:22 AM             2,171 PropertyList.js
+09/15/2025  10:22 AM             2,210 WhyChooseUsSection.js
+               8 File(s)         14,172 bytes
 
  Directory of C:\xampp\htdocs\LatuaGroup\uploads
 
-09/06/2025  05:28 PM    <DIR>          .
-09/06/2025  05:25 PM    <DIR>          ..
-09/06/2025  05:27 PM         3,688,572 about-hero.jpg
-09/06/2025  05:22 PM    <DIR>          agents
-09/01/2025  05:07 PM    <DIR>          bank
-09/06/2025  03:41 PM        12,261,574 contact-hero.jpg
-09/06/2025  12:50 AM    <DIR>          hero
-09/06/2025  12:50 AM            24,660 latualogo.png
-09/06/2025  05:23 PM    <DIR>          properties
-09/06/2025  12:50 AM         1,373,158 team.png
-               4 File(s)     17,347,964 bytes
+09/18/2025  09:09 PM    <DIR>          .
+09/25/2025  04:40 PM    <DIR>          ..
+09/15/2025  10:22 AM         3,688,572 about-hero.jpg
+09/15/2025  10:22 AM    <DIR>          agents
+09/18/2025  09:08 PM           489,567 aktivitas1.png
+09/18/2025  09:08 PM           290,774 aktivitas2.png
+09/18/2025  09:09 PM           416,850 aktivitas3.png
+09/15/2025  10:22 AM        12,261,574 contact-hero.jpg
+09/15/2025  10:22 AM    <DIR>          hero
+09/15/2025  10:22 AM            24,660 latualogo.png
+09/15/2025  10:22 AM    <DIR>          properties
+09/15/2025  10:22 AM         1,373,158 team.png
+               7 File(s)     18,545,155 bytes
 
  Directory of C:\xampp\htdocs\LatuaGroup\uploads\agents
 
-09/06/2025  05:22 PM    <DIR>          .
-09/06/2025  05:28 PM    <DIR>          ..
-09/06/2025  05:22 PM         2,937,134 1757154153__srcfirebase.js import { initializeApp } from firebaseapp; import { getAuth, GoogleAuthProvider, signInWithPopup, signOut } from firebaseauth; import { getFirestore } from firebasefirestore; const.png
+09/15/2025  10:22 AM    <DIR>          .
+09/18/2025  09:09 PM    <DIR>          ..
+09/15/2025  10:22 AM         2,937,134 1757154153__srcfirebase.js import { initializeApp } from firebaseapp; import { getAuth, GoogleAuthProvider, signInWithPopup, signOut } from firebaseauth; import { getFirestore } from firebasefirestore; const.png
                1 File(s)      2,937,134 bytes
-
- Directory of C:\xampp\htdocs\LatuaGroup\uploads\bank
-
-09/01/2025  05:07 PM    <DIR>          .
-09/06/2025  05:28 PM    <DIR>          ..
-               0 File(s)              0 bytes
 
  Directory of C:\xampp\htdocs\LatuaGroup\uploads\hero
 
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  05:28 PM    <DIR>          ..
-09/06/2025  12:50 AM         2,055,821 hero_689c5eb59224b1.05696379.png
+09/15/2025  10:22 AM    <DIR>          .
+09/18/2025  09:09 PM    <DIR>          ..
+09/15/2025  10:22 AM         2,055,821 hero_689c5eb59224b1.05696379.png
                1 File(s)      2,055,821 bytes
 
  Directory of C:\xampp\htdocs\LatuaGroup\uploads\properties
 
-09/06/2025  05:23 PM    <DIR>          .
-09/06/2025  05:28 PM    <DIR>          ..
-09/06/2025  12:50 AM            11,907 prop_68b5517a5b871.jpeg
-09/06/2025  05:23 PM           171,714 prop_68bc0b8dd7a49.jpg
+09/15/2025  10:22 AM    <DIR>          .
+09/18/2025  09:09 PM    <DIR>          ..
+09/15/2025  10:22 AM            11,907 prop_68b5517a5b871.jpeg
+09/15/2025  10:22 AM           171,714 prop_68bc0b8dd7a49.jpg
                2 File(s)        183,621 bytes
 
  Directory of C:\xampp\htdocs\LatuaGroup\user
 
-09/06/2025  12:50 AM    <DIR>          .
-09/06/2025  05:25 PM    <DIR>          ..
-09/06/2025  12:50 AM             9,504 rent_properties.php
-09/06/2025  12:50 AM             9,501 sale_properties.php
+09/15/2025  10:22 AM    <DIR>          .
+09/25/2025  04:40 PM    <DIR>          ..
+09/15/2025  10:22 AM             9,504 rent_properties.php
+09/15/2025  10:22 AM             9,501 sale_properties.php
                2 File(s)         19,005 bytes
 
      Total Files Listed:
-             372 File(s)     30,442,695 bytes
-             599 Dir(s)  120,947,011,584 bytes free
+              76 File(s)     46,372,293 bytes
+              73 Dir(s)  79,376,183,296 bytes free

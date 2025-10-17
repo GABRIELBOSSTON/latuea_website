@@ -51,6 +51,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/LatuaGroup/includes/header.php';
   <script type="text/babel" src="/LatuaGroup/react/PropertyList.js"></script>
   <script type="text/babel" src="/LatuaGroup/react/BankPartnerSection.js"></script>
   <script type="text/babel" src="/LatuaGroup/react/ProjectSection.js"></script>
+    <script type="text/babel" src="/LatuaGroup/react/ActivitySection.js"></script>
   <script type="text/babel" src="/LatuaGroup/react/WhyChooseUsSection.js"></script>
   <script type="text/babel" src="/LatuaGroup/react/App.js"></script>
 

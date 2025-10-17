@@ -33,7 +33,6 @@ $page_title = isset($page_title) ? $page_title : 'Latuae Land';
       </div>
 
       <a href="office.php" class="text-gray-700 hover:text-blue-900 font-medium">Layanan</a>
-      <a href="#" class="text-gray-700 hover:text-blue-900 font-medium">Proyek</a>
       <a href="/LatuaGroup/pages/about.php" class="text-gray-700 hover:text-blue-900 font-medium">Tentang Kami</a>
     </div>
 

@@ -2,20 +2,23 @@
 require_once $_SERVER['DOCUMENT_ROOT'] . '/LatuaGroup/includes/db_connect.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $name = $_POST['name'];
-    $phone = $_POST['phone_number'];
-    $email = $_POST['email'];
-
+    $name = trim($_POST['name']);
+    $phone = trim($_POST['phone_number']);
+    $email = trim($_POST['email'] ?? '');
     $photoName = null;
+
     if (!empty($_FILES['photo']['name'])) {
         $photoName = time() . "_" . basename($_FILES['photo']['name']);
-        move_uploaded_file($_FILES['photo']['tmp_name'], $_SERVER['DOCUMENT_ROOT'] . "/LatuaGroup/Uploads/agents/" . $photoName);
+        move_uploaded_file(
+            $_FILES['photo']['tmp_name'],
+            $_SERVER['DOCUMENT_ROOT'] . "/LatuaGroup/Uploads/agents/" . $photoName
+        );
     }
 
     $stmt = $pdo->prepare("INSERT INTO agents (name, phone_number, email, photo_path) VALUES (?, ?, ?, ?)");
     $stmt->execute([$name, $phone, $email, $photoName]);
 
-    header("Location: agents.php");
+    header("Location: agents.php?success=1");
     exit;
 }
 ?>

@@ -1,9 +1,8 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . '/LatuaGroup/includes/db_connect.php';
-
 header('Content-Type: application/json');
 
-// Ambil properti + gambar cover (is_main=1, fallback gambar pertama)
+// Ambil properti yang dijadikan Project Terbaru
 $stmt = $pdo->query("
     SELECT p.id, p.title, p.price, p.province, p.regency, p.property_type, p.description,
            COALESCE(
@@ -18,16 +17,17 @@ $stmt = $pdo->query("
                 LIMIT 1)
            ) AS image_url
     FROM properties p
-    ORDER BY p.created_at DESC
+    WHERE p.is_featured = 1
+    LIMIT 1
 ");
 
-$properties = $stmt->fetchAll(PDO::FETCH_ASSOC);
+$property = $stmt->fetch(PDO::FETCH_ASSOC);
 
-// Tambahin path lengkap biar langsung bisa dipakai React
-foreach ($properties as &$p) {
-    $p['image_url'] = $p['image_url'] 
-        ? "/LatuaGroup/uploads/properties/" . $p['image_url'] 
+if ($property) {
+    $property['image_url'] = $property['image_url'] 
+        ? "/LatuaGroup/uploads/properties/" . $property['image_url']
         : "/LatuaGroup/uploads/default.jpg";
+    echo json_encode([$property]);
+} else {
+    echo json_encode([]);
 }
-
-echo json_encode($properties);

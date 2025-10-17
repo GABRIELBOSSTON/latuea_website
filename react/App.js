@@ -1,21 +1,13 @@
-const App = () => {
+function App() {
+  console.log("✅ App loaded");
   return (
     <div>
-      {/* Hero Search */}
       <HeroSearch />
-
-      {/* Property List */}
       <PropertyList />
-
-      {/* Bank Partner */}
       <BankPartnerSection />
-
-      {/* Project Section */}
       <ProjectSection />
-
-      {/* Why Choose Us */}
+      <ActivitySection />
       <WhyChooseUsSection />
-      
     </div>
   );
-};
+}
