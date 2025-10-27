@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Transaksi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(180deg, #1C96E8 0%, #1890E6 100%);
+            min-height: 100vh;
+            padding: 0;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            color: white;
+            gap: 20px;
+        }
+
+        .back-btn {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .header-title {
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        .transaction-card {
+            background: white;
+            margin: 20px;
+            border-radius: 16px;
+            padding: 30px 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .logo-container {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .logo {
+            width: 120px;
+            height: auto;
+        }
+
+        .transaction-info {
+            text-align: center;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .transaction-date {
+            color: #8c8c8c;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .transaction-id {
+            color: #8c8c8c;
+            font-size: 14px;
+        }
+
+        .status-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #52c41a;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .status-icon {
+            width: 24px;
+            height: 24px;
+            background: #52c41a;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 14px;
+        }
+
+        .transaction-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #262626;
+            margin-bottom: 25px;
+            line-height: 1.4;
+        }
+
+        .amount-section {
+            background: #f5f9fd;
+            padding: 20px;
+            border-radius: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .amount-label {
+            font-size: 16px;
+            font-weight: 600;
+            color: #262626;
+        }
+
+        .amount-value {
+            font-size: 20px;
+            font-weight: 700;
+            color: #262626;
+        }
+
+        .payment-method {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .method-label {
+            color: #8c8c8c;
+            font-size: 14px;
+        }
+
+        .method-value {
+            color: #262626;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .detail-section {
+            margin-top: 25px;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+            cursor: pointer;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .section-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #262626;
+        }
+
+        .detail-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .detail-label {
+            color: #8c8c8c;
+            font-size: 14px;
+        }
+
+        .detail-value {
+            color: #262626;
+            font-size: 14px;
+            font-weight: 500;
+            text-align: right;
+        }
+
+        .help-button {
+            background: white;
+            border: 2px solid #1890E6;
+            color: #1890E6;
+            padding: 15px;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            width: 100%;
+            margin-top: 30px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .help-icon {
+            width: 24px;
+            height: 24px;
+        }
+
+        .watermark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            opacity: 0.03;
+            font-size: 48px;
+            font-weight: bold;
+            color: #1890E6;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .watermark-text {
+            margin: 10px 20px;
+        }
+
+        .copy-icon {
+            color: #1890E6;
+            cursor: pointer;
+            font-size: 16px;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <button class="back-btn" onclick="history.back()">✕</button>
+        <h1 class="header-title">Detail Transaksi</h1>
+    </div>
+
+    <div class="transaction-card">
+        <div class="watermark">
+            <span class="watermark-text">DANA</span>
+            <span class="watermark-text">DANA</span>
+            <span class="watermark-text">DANA</span>
+            <span class="watermark-text">DANA</span>
+            <span class="watermark-text">DANA</span>
+            <span class="watermark-text">DANA</span>
+        </div>
+
+        <div class="logo-container">
+            <svg class="logo" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="30" cy="30" r="25" fill="#1890E6"/>
+                <path d="M15 25 L25 15 L35 25 L25 35 Z" fill="white"/>
+                <text x="60" y="42" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#1890E6">DANA</text>
+            </svg>
+        </div>
+
+        <div class="transaction-info">
+            <div class="transaction-date">18 Okt 2025 • 18:06</div>
+            <div class="transaction-id">ID DANA 0856••••2799</div>
+        </div>
+
+        <div class="status-badge">
+            <div class="status-icon">✓</div>
+            <span>Transaksi berhasil!</span>
+        </div>
+
+        <div class="transaction-title">
+            Kirim Uang Rp90.000 ke Ruhmanda - 085721210210
+        </div>
+
+        <div class="amount-section">
+            <div class="amount-label">Total Bayar</div>
+            <div class="amount-value">Rp90.000</div>
+        </div>
+
+        <div class="payment-method">
+            <div class="method-label">Metode Pembayaran</div>
+            <div class="method-value">Saldo DANA (SmartPay)</div>
+        </div>
+
+        <div class="detail-section">
+            <div class="section-header">
+                <div class="section-title">Detail Penerima</div>
+                <div>▲</div>
+            </div>
+            <div class="detail-row">
+                <div class="detail-label">Nama</div>
+                <div class="detail-value">Ruhmanda</div>
+            </div>
+            <div class="detail-row">
+                <div class="detail-label">Akun DANA</div>
+                <div class="detail-value">085721210210</div>
+            </div>
+        </div>
+
+        <div class="detail-section">
+            <div class="section-header">
+                <div class="section-title">Detail Transaksi</div>
+                <div>▲</div>
+            </div>
+            <div class="detail-row">
+                <div class="detail-label">ID Transaksi <span class="copy-icon">📋</span></div>
+                <div class="detail-value">202510181012141001010016623141497187​2</div>
+            </div>
+            <div class="detail-row">
+                <div class="detail-label">ID Order Merchant</div>
+                <div class="detail-value">•••1871</div>
+            </div>
+        </div>
+
+        <button class="help-button">
+            <svg class="help-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="10" stroke="#1890E6" stroke-width="2"/>
+                <path d="M12 16V12M12 8H12.01" stroke="#1890E6" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            BUTUH BANTUAN?
+        </button>
+    </div>
+</body>
+</html>

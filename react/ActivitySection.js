@@ -25,7 +25,7 @@ function ActivitySection() {
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
           AKTIVITAS KAMI
         </h2>
-        <div className="w-20 h-[2px] bg-black mx-auto mt-3"></div>
+        <div className="w-20 h-[3px] bg-[#334894] mx-auto mt-0.5 mb-6"></div>
       </div>
 
       {/* Cards */}

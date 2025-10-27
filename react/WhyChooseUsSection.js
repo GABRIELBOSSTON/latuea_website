@@ -73,7 +73,7 @@ class WhyChooseUsSection extends React.Component {
     ];
 
     return (
-      <section className="bg-white py-20 px-4 sm:px-6 relative overflow-hidden">
+      <section className="bg-white py-12 px-4 sm:px-6 relative overflow-hidden">
         {/* Judul dinamis */}
         <div className="text-center mb-12">
           {activeSlide === 0 ? (
@@ -82,6 +82,7 @@ class WhyChooseUsSection extends React.Component {
               <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mt-1">
                 KENAPA MEMILIH KAMI?
               </h2>
+              <div className="w-20 h-[3px] bg-[#334894] mx-auto mt-0.5 mb-6"></div>
             </>
           ) : (
             <>
@@ -89,9 +90,9 @@ class WhyChooseUsSection extends React.Component {
               <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mt-1">
                 APA KATA AGEN
               </h2>
+              <div className="w-20 h-[3px] bg-[#334894] mx-auto mt-0.5 mb-6"></div>
             </>
           )}
-          <div className="w-24 h-1 bg-blue-600 mx-auto mt-4 rounded-full"></div>
         </div>
 
         {/* SLIDER WRAPPER */}
@@ -124,5 +125,3 @@ class WhyChooseUsSection extends React.Component {
     );
   }
 }
-
-
