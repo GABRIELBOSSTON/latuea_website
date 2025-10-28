@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 17, 2025 at 10:31 PM
+-- Generation Time: Oct 28, 2025 at 05:26 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -65,6 +65,25 @@ CREATE TABLE `hero_images` (
 
 INSERT INTO `hero_images` (`id`, `image_path`, `is_active`, `uploaded_at`) VALUES
 (12, '68adc91b7f20b_office.jpg', 1, '2025-08-26 14:47:55');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `iklan`
+--
+
+CREATE TABLE `iklan` (
+  `id` int(11) NOT NULL,
+  `image_path` varchar(255) NOT NULL,
+  `uploaded_at` datetime DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `iklan`
+--
+
+INSERT INTO `iklan` (`id`, `image_path`, `uploaded_at`) VALUES
+(1, '/LatuaGroup/uploads/iklan/iklan_6900e21334558.jpg', '2025-10-28 22:32:35');
 
 -- --------------------------------------------------------
 
@@ -283,6 +302,12 @@ ALTER TABLE `hero_images`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `iklan`
+--
+ALTER TABLE `iklan`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `pending_properties`
 --
 ALTER TABLE `pending_properties`
@@ -344,6 +369,12 @@ ALTER TABLE `agents`
 --
 ALTER TABLE `hero_images`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+
+--
+-- AUTO_INCREMENT for table `iklan`
+--
+ALTER TABLE `iklan`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `pending_properties`

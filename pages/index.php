@@ -5,6 +5,9 @@ header("Expires: Sat, 26 Jul 1997 05:00:00 GMT");
 
 require_once $_SERVER['DOCUMENT_ROOT'] . '/LatuaGroup/includes/header.php';
 ?>
+
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/LatuaGroup/includes/popup_iklan.php'; ?>
+
 <!DOCTYPE html>
 <html lang="id">
 <head>

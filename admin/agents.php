@@ -19,6 +19,7 @@ $agents = $pdo->query("SELECT * FROM agents ORDER BY created_at DESC")->fetchAll
         <a href="index.php" class="block hover:text-gray-300">🏠 Dashboard</a>
         <a href="properties.php" class="block hover:text-gray-300">🏡 Properti</a>
         <a href="agents.php" class="block hover:text-gray-300">👨‍💼 Agen</a>
+        <a href="upload_iklan.php" class="block hover:text-gray-300">🪧 Kelola Iklan</a>
       </nav>
     </aside>
 

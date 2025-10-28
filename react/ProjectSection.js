@@ -97,16 +97,6 @@ const ProjectSection = () => {
                 <p className="text-base sm:text-[19px] text-[#736767] text-center sm:text-left w-full sm:w-auto">
                   {project.regency}, {project.province}
                 </p>
-                <button
-                  className="bg-white border border-gray-300 text-gray-700 flex items-center justify-center w-[228px] h-[40px] rounded-md hover:bg-gray-50 transition-colors shadow-md text-sm font-medium ml-[-20px] sm:ml-0"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    if (project.brochure_url) window.open(project.brochure_url, "_blank");
-                  }}
-                >
-                  <i className="fas fa-file-pdf mr-2"></i>
-                  E-Brochure
-                </button>
               </div>
             </div>
           </div>
@@ -114,7 +104,7 @@ const ProjectSection = () => {
           {/* === Deskripsi Project === */}
           <div className="text-white max-w-2xl text-center lg:text-left">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 lg:mb-5">Project Terbaru</h2>
-            <h3 className="text-lg sm:text-xl font-normal mb-3 sm:mb-4 opacity-90">A Masterpiece in Modern Living</h3>
+            <h3 className="text-lg sm:text-xl font-normal mb-3 sm:mb-4 opacity-90">Project Yang sedang kami kerjakan</h3>
             <p className="text-sm sm:text-base leading-relaxed opacity-85 mb-6 sm:mb-8">
               {project.description ||
                 "Dengan lokasi strategis dan fasilitas bertaraf dunia, proyek terbaru kami bukan sekadar hunian, melainkan sebuah karya seni arsitektur. Rasakan pengalaman tinggal di lingkungan mewah yang hanya dimiliki oleh segelintir orang terpilih."}

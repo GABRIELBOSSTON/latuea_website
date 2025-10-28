@@ -434,15 +434,21 @@ $images = $stmtImg->fetchAll(PDO::FETCH_ASSOC);
   <div class="facilities-card bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
     <h2 class="text-xl md:text-2xl font-bold text-gray-900 mb-4 pb-3 border-b-2 border-gray-200">Fasilitas</h2>
     <?php if (!empty($property['facilities'])): ?>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-        <?php foreach (explode(',', $property['facilities']) as $f): ?>
+      <div class="flex flex-col gap-3">
+        <?php
+        $facilities = preg_split('/\r\n|\r|\n/', $property['facilities']);
+        foreach ($facilities as $f):
+          $trimmed = trim($f);
+          if (!empty($trimmed)):
+        ?>
           <div class="flex items-center gap-3 p-3 bg-green-50 rounded-lg">
             <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
               <i class="fas fa-check text-white text-sm"></i>
             </div>
-            <span class="text-gray-700 font-medium text-sm md:text-base"><?= htmlspecialchars(trim($f)) ?></span>
+            <span class="text-gray-700 font-medium text-sm md:text-base"><?= htmlspecialchars($trimmed) ?></span>
           </div>
-        <?php endforeach; ?>
+        <?php endif; endforeach; ?>
+
       </div>
     <?php else: ?>
       <p class="text-gray-500 text-center py-4 text-sm md:text-base">Tidak ada fasilitas yang ditambahkan.</p>

@@ -24,10 +24,10 @@ $page_title = isset($page_title) ? $page_title : 'Latuae Land';
           data-menu="properti"
         >
           <ul class="py-2 text-sm text-gray-700">
-            <li><a href="#" class="block px-4 py-2 hover:bg-gray-50">Rumah</a></li>
-            <li><a href="#" class="block px-4 py-2 hover:bg-gray-50">Apartemen</a></li>
-            <li><a href="#" class="block px-4 py-2 hover:bg-gray-50">Ruko</a></li>
-            <li><a href="#" class="block px-4 py-2 hover:bg-gray-50">Tanah</a></li>
+            <li><a href="/LatuaGroup/pages/listproperty.php?property=rumah" class="block px-4 py-2 hover:bg-gray-50">Rumah</a></li>
+            <li><a href="/LatuaGroup/pages/listproperty.php?property=apartemen" class="block px-4 py-2 hover:bg-gray-50">Apartemen</a></li>
+            <li><a href="/LatuaGroup/pages/listproperty.php?property=ruko" class="block px-4 py-2 hover:bg-gray-50">Ruko</a></li>
+            <li><a href="/LatuaGroup/pages/listproperty.php?property=tanah" class="block px-4 py-2 hover:bg-gray-50">Tanah</a></li>
           </ul>
         </div>
       </div>
@@ -100,10 +100,10 @@ $page_title = isset($page_title) ? $page_title : 'Latuae Land';
           </button>
           <div class="max-h-0 overflow-hidden transition-all" data-panel="prop">
             <ul class="pl-4 py-1 text-[16px] text-gray-700">
-              <li><a href="#" class="block px-2 py-2 rounded hover:bg-gray-50">Rumah</a></li>
-              <li><a href="#" class="block px-2 py-2 rounded hover:bg-gray-50">Apartemen</a></li>
-              <li><a href="#" class="block px-2 py-2 rounded hover:bg-gray-50">Ruko</a></li>
-              <li><a href="#" class="block px-2 py-2 rounded hover:bg-gray-50">Tanah</a></li>
+              <li><a href="/LatuaGroup/pages/listproperty.php?property=rumah" class="block px-4 py-2 hover:bg-gray-50">Rumah</a></li>
+              <li><a href="/LatuaGroup/pages/listproperty.php?property=apartemen" class="block px-4 py-2 hover:bg-gray-50">Apartemen</a></li>
+              <li><a href="/LatuaGroup/pages/listproperty.php?property=ruko" class="block px-4 py-2 hover:bg-gray-50">Ruko</a></li>
+              <li><a href="/LatuaGroup/pages/listproperty.php?property=tanah" class="block px-4 py-2 hover:bg-gray-50">Tanah</a></li>
             </ul>
           </div>
         </div>
@@ -206,5 +206,30 @@ $page_title = isset($page_title) ? $page_title : 'Latuae Land';
       if (langMobLabel) langMobLabel.textContent = btn.getAttribute('data-lang');
     });
   });
+
+
+    // ===== Properti dropdown (desktop) - tambahkan delay =====
+  const propDropdown = document.getElementById('propertiDropdown');
+  if (propDropdown) {
+    const menu = propDropdown.querySelector('[data-menu="properti"]');
+    let showTimer, hideTimer;
+
+    propDropdown.addEventListener('mouseenter', () => {
+      clearTimeout(hideTimer);
+      showTimer = setTimeout(() => {
+        menu.classList.remove('invisible', 'opacity-0', 'translate-y-2');
+        menu.classList.add('visible', 'opacity-100', 'translate-y-0', 'pointer-events-auto');
+      }, 150); // delay muncul 150ms
+    });
+
+    propDropdown.addEventListener('mouseleave', () => {
+      clearTimeout(showTimer);
+      hideTimer = setTimeout(() => {
+        menu.classList.remove('visible', 'opacity-100', 'translate-y-0', 'pointer-events-auto');
+        menu.classList.add('invisible', 'opacity-0', 'translate-y-2');
+      }, 300); // delay hilang 300ms
+    });
+  }
+
 })();
 </script>
