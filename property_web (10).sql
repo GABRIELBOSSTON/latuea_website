@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 28, 2025 at 05:26 PM
+-- Generation Time: Oct 31, 2025 at 07:28 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -44,7 +44,8 @@ CREATE TABLE `agents` (
 --
 
 INSERT INTO `agents` (`id`, `name`, `company`, `rating`, `total_deals`, `phone_number`, `email`, `photo_path`, `created_at`) VALUES
-(15, 'yopon', NULL, 4.5, 0, '873847328', 'tyo@gmail.com', '1760732711_prop_68d7cb8cca116.jpg', '2025-10-17 20:25:11');
+(15, 'yopon', NULL, 4.5, 0, '873847328', 'tyo@gmail.com', '1760732711_prop_68d7cb8cca116.jpg', '2025-10-17 20:25:11'),
+(16, 'nopall', NULL, 4.5, 0, '12331', 'dwqw@gmail.com', '1761933638_prop_68d7cb8ccb86f.jpg', '2025-10-31 18:00:38');
 
 -- --------------------------------------------------------
 
@@ -151,7 +152,9 @@ INSERT INTO `properties` (`id`, `id_properti`, `title`, `description`, `price`, 
 (40, NULL, 'rumah atta halilintar', 'ini rumah bukan rumah rumahan hehehe', 1200000.00, 'DKI Jakarta', 'Jakarta Pusat', NULL, NULL, '2025-09-27 17:02:23', 'for_sale', 'Rumah', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, 'ada kolam renang\r\nsatpam 24 jam\r\nkeren dh', 0),
 (42, NULL, 'xczc', 'zcxxcxzc', 1000000.00, 'DKI Jakarta', 'Jakarta Barat', NULL, NULL, '2025-10-17 19:36:51', 'for_sale', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, 'cxzczx\r\nczxczx\r\nzxczxc', 1),
 (43, NULL, 'adasd', 'adasdasdas', 10000000.00, 'Jawa Barat', 'Bandung Kota', NULL, NULL, '2025-10-17 19:45:00', 'for_rent', 'Apartemen', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 15, 'dasdsa', 0),
-(44, NULL, 'wqeqwe', 'wqrqwfd', 1000000.00, 'DKI Jakarta', 'Jakarta Barat', NULL, NULL, '2025-10-17 20:25:42', 'for_rent', 'Apartemen', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 15, 'efsdfsdfs', 0);
+(44, NULL, 'wqeqwe', 'wqrqwfd', 1000000.00, 'Jawa Barat', 'Kota Bekasi', NULL, NULL, '2025-10-17 20:25:42', 'for_rent', 'Apartemen', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 16, 'efsdfsdfs', 0),
+(45, NULL, 'asdas', 'dadasdasd', 10000.00, 'DKI Jakarta', 'Jakarta Barat', NULL, NULL, '2025-10-31 17:54:47', 'for_sale', 'Apartemen', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 15, 'asdad\r\nadasdas\r\nadadas', 0),
+(46, NULL, 'dasdas', 'adasds', 1000000.00, 'DKI Jakarta', 'Jakarta Barat', NULL, NULL, '2025-10-31 18:14:16', 'for_sale', 'Rumah', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 15, 'asdas\r\nadsasd\r\nadas', 0);
 
 -- --------------------------------------------------------
 
@@ -190,7 +193,15 @@ INSERT INTO `property_images` (`id`, `property_id`, `image_path`, `is_main`) VAL
 (64, 44, 'prop_68f2a646a97bb.jpg', 0),
 (65, 44, 'prop_68f2a646a9f4b.jpg', 1),
 (66, 44, 'prop_68f2a646aa6f9.jpg', 0),
-(67, 44, 'prop_68f2a646aaaed.jpg', 0);
+(67, 44, 'prop_68f2a646aaaed.jpg', 0),
+(68, 45, 'prop_6904f7e7e4196.jpg', 0),
+(69, 45, 'prop_6904f7e7e4b35.jpg', 1),
+(70, 45, 'prop_6904f7e7e4eb7.jpg', 0),
+(71, 45, 'prop_6904f7e7e53ea.jpg', 0),
+(72, 46, 'prop_6904fc788173f.jpg', 0),
+(73, 46, 'prop_6904fc7881c23.jpg', 1),
+(74, 46, 'prop_6904fc78820d8.jpg', 0),
+(75, 46, 'prop_6904fc78823dc.jpg', 0);
 
 -- --------------------------------------------------------
 
@@ -270,7 +281,34 @@ INSERT INTO `regencies` (`id`, `province_id`, `name`) VALUES
 (8, 2, 'Bandung Kota'),
 (9, 2, 'Depok'),
 (10, 4, 'Surabaya'),
-(11, 4, 'Malang');
+(11, 4, 'Malang'),
+(12, 2, 'Kabupaten Bandung'),
+(13, 2, 'Kabupaten Bandung Barat'),
+(14, 2, 'Kabupaten Bekasi'),
+(15, 2, 'Kabupaten Bogor'),
+(16, 2, 'Kabupaten Ciamis'),
+(17, 2, 'Kabupaten Cianjur'),
+(18, 2, 'Kabupaten Cirebon'),
+(19, 2, 'Kabupaten Garut'),
+(20, 2, 'Kabupaten Indramayu'),
+(21, 2, 'Kabupaten Karawang'),
+(22, 2, 'Kabupaten Kuningan'),
+(23, 2, 'Kabupaten Majalengka'),
+(24, 2, 'Kabupaten Pangandaran'),
+(25, 2, 'Kabupaten Purwakarta'),
+(26, 2, 'Kabupaten Subang'),
+(27, 2, 'Kabupaten Sukabumi'),
+(28, 2, 'Kabupaten Sumedang'),
+(29, 2, 'Kabupaten Tasikmalaya'),
+(30, 2, 'Kota Bandung'),
+(31, 2, 'Kota Banjar'),
+(32, 2, 'Kota Bekasi'),
+(33, 2, 'Kota Bogor'),
+(34, 2, 'Kota Cimahi'),
+(35, 2, 'Kota Cirebon'),
+(36, 2, 'Kota Depok'),
+(37, 2, 'Kota Sukabumi'),
+(38, 2, 'Kota Tasikmalaya');
 
 -- --------------------------------------------------------
 
@@ -362,7 +400,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `agents`
 --
 ALTER TABLE `agents`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `hero_images`
@@ -386,13 +424,13 @@ ALTER TABLE `pending_properties`
 -- AUTO_INCREMENT for table `properties`
 --
 ALTER TABLE `properties`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
 
 --
 -- AUTO_INCREMENT for table `property_images`
 --
 ALTER TABLE `property_images`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=68;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=76;
 
 --
 -- AUTO_INCREMENT for table `property_images_temp`
@@ -410,7 +448,7 @@ ALTER TABLE `provinces`
 -- AUTO_INCREMENT for table `regencies`
 --
 ALTER TABLE `regencies`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 
 --
 -- AUTO_INCREMENT for table `users`

@@ -16,14 +16,51 @@ $page_title = isset($page_title) ? $page_title : 'Latuae Land';
   </style>
 </head>
 
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const searchInputs = document.querySelectorAll("#searchInput, #searchInputMob");
+  const searchIcons = document.querySelectorAll(".fa-search");
+
+  // Fungsi pencarian
+  function doSearch(query) {
+    if (!query.trim()) return;
+    const url = `/LatuaGroup/pages/listproperty.php?q=${encodeURIComponent(query)}`;
+    window.location.href = url;
+  }
+
+  // Enter di input
+  searchInputs.forEach(input => {
+    input.addEventListener("keypress", function(e) {
+      if (e.key === "Enter") {
+        e.preventDefault();
+        doSearch(this.value);
+      }
+    });
+  });
+
+  // Klik ikon search
+  searchIcons.forEach(icon => {
+    icon.addEventListener("click", function() {
+      const input = this.closest("div").querySelector("input");
+      if (input) doSearch(input.value);
+    });
+  });
+});
+</script>
+
+
 <body>
 <nav id="mainNav" class="fixed top-0 left-0 w-full z-50 bg-white shadow-md">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-6 py-3 sm:py-4 flex items-center justify-between">
     
+
     <!-- Logo -->
     <a href="/LatuaGroup/pages/index.php" class="flex items-center space-x-2">
-      <img src="/LatuaGroup/uploads/latualogo.png" alt="Latuae Land" class="h-8 sm:h-9 w-auto">
-    </a>
+      <img src="/LatuaGroup/uploads/latualogo.png" 
+          alt="Latuae Land" 
+          class="h-16 sm:h-20 w-auto">        
+    </a>                                      
+
 
     <!-- Desktop Nav -->
     <div class="hidden md:flex items-center gap-6 lg:gap-8">
@@ -70,10 +107,13 @@ $page_title = isset($page_title) ? $page_title : 'Latuae Land';
       </a>
 
       <div class="relative">
-        <input type="text" id="searchInput" placeholder="Cari properti..." class="h-10 pl-3 pr-10 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-        <span class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400"><i class="fas fa-search"></i></span>
+        <input type="text" id="searchInput" placeholder="Cari properti..." 
+              class="h-10 pl-3 pr-10 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+        <span class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400">
+          <i class="fas fa-search"></i>
+        </span>
       </div>
-    </div>
+
 
     <!-- Mobile Hamburger -->
     <button id="hamburgerBtn" class="md:hidden w-10 h-10 flex items-center justify-center rounded-md text-gray-700 hover:text-blue-900">
@@ -134,8 +174,11 @@ $page_title = isset($page_title) ? $page_title : 'Latuae Land';
             <i class="fa-solid fa-phone"></i> Hubungi Kami
           </a>
           <div class="relative">
-            <input type="text" id="searchInputMob" placeholder="Cari properti..." class="w-full pl-3 pr-10 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-            <span class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400"><i class="fas fa-search"></i></span>
+            <input type="text" id="searchInputMob" placeholder="Cari properti..." 
+                  class="w-full pl-3 pr-10 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <span class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400">
+              <i class="fas fa-search"></i>
+            </span>
           </div>
         </div>
       </nav>

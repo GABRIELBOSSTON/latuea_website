@@ -1,21 +1,33 @@
 class WhyChooseUsSection extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { activeSlide: 0 };
+    this.state = { 
+      activeSlide: 0,
+      fade: true
+    };
     this.setSlide = this.setSlide.bind(this);
   }
 
   setSlide(index) {
-    this.setState({ activeSlide: index });
+    if (index === this.state.activeSlide) return;
+
+    // 🔹 Trigger animasi fade out dulu
+    this.setState({ fade: false });
+
+    // 🔹 Setelah animasi keluar, ganti slide & fade in lagi
+    setTimeout(() => {
+      this.setState({ activeSlide: index, fade: true });
+    }, 300); // durasi transisi 0.3s
   }
 
   render() {
-    const { activeSlide } = this.state;
+    const { activeSlide, fade } = this.state;
 
     const slides = [
       {
-        image: "/LatuaGroup/uploads/team.PNG",
-        quote: "Kami adalah perusahaan properti yang berkomitmen menghadirkan hunian premium dengan lokasi strategis, desain modern, serta fasilitas eksklusif yang mendukung gaya hidup berkelas.",
+        image: "/LatuaGroup/uploads/team1.jpg",
+        quote:
+          "Kami adalah perusahaan properti yang berkomitmen menghadirkan hunian premium dengan lokasi strategis, desain modern, serta fasilitas eksklusif yang mendukung gaya hidup berkelas.",
         title: "KENAPA MEMILIH KAMI?",
         subtitle: "KAMI",
       },
@@ -31,10 +43,17 @@ class WhyChooseUsSection extends React.Component {
 
     const current = slides[activeSlide];
 
+    // 🔹 Style animasi inline
+    const transitionStyle = {
+      opacity: fade ? 1 : 0,
+      transform: fade ? "scale(1)" : "scale(0.97)",
+      transition: "all 0.3s ease-in-out"
+    };
+
     return (
       <section className="bg-white py-12 px-4 sm:px-6 relative">
         {/* JUDUL DINAMIS */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-12" style={transitionStyle}>
           <p className="text-gray-500 text-lg">{current.subtitle}</p>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mt-1">
             {current.title}
@@ -42,10 +61,9 @@ class WhyChooseUsSection extends React.Component {
           <div className="w-20 h-[3px] bg-[#353232] mx-auto mt-0.5 mb-6"></div>
         </div>
 
-        {/* === MOBILE: FLEX COLUMN (SAMA KAYAK YANG KAMU SUKA) === */}
-        <div className="block md:hidden">
+        {/* MOBILE */}
+        <div className="block md:hidden" style={transitionStyle}>
           <div className="flex flex-col items-center space-y-6 max-w-md mx-auto">
-            {/* Foto */}
             <div className="w-[88%]">
               <img
                 src={current.image}
@@ -54,7 +72,6 @@ class WhyChooseUsSection extends React.Component {
               />
             </div>
 
-            {/* Box Teks */}
             <div className="relative w-[88%] bg-[#353232] text-white rounded-xl shadow-2xl p-6 sm:p-7">
               <div className="absolute -top-3 right-5 text-yellow-400 text-6xl font-black opacity-50 leading-none">
                 "
@@ -72,9 +89,8 @@ class WhyChooseUsSection extends React.Component {
           </div>
         </div>
 
-        {/* === DESKTOP: ABSOLUTE + OVERLAP (SAMA PERSIS KAYAK KODE PERTAMA KAMU) === */}
-        <div className="hidden md:block relative min-h-[450px] px-6 flex items-center justify-center pt-16 max-w-6xl mx-auto">
-          {/* Foto (kiri) */}
+        {/* DESKTOP */}
+        <div className="hidden md:block relative min-h-[450px] px-6 flex items-center justify-center pt-16 max-w-6xl mx-auto" style={transitionStyle}>
           <div className="absolute top-[20px] left-[20px] md:left-[100px] w-full md:w-[400px] h-[350px] z-[2]">
             <img
               src={current.image}
@@ -83,7 +99,6 @@ class WhyChooseUsSection extends React.Component {
             />
           </div>
 
-          {/* Box teks (kanan) */}
           <div className="absolute top-[80px] left-[200px] md:left-[350px] w-full md:w-[650px] h-[340px] bg-[#353232] text-white rounded-xl shadow-2xl p-8 z-[1]">
             <div className="absolute top-[-15px] right-6 text-yellow-400 text-[80px] font-black opacity-50">
               "
