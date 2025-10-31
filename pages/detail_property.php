@@ -39,6 +39,9 @@ $images = $stmtImg->fetchAll(PDO::FETCH_ASSOC);
 
 <?php include '../includes/header.php'; ?>
 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdn.tailwindcss.com"></script>
+
 <!-- Google Fonts Raleway -->
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -191,15 +194,16 @@ $images = $stmtImg->fetchAll(PDO::FETCH_ASSOC);
     100% { transform: rotate(360deg); }
   }
 
-  /* Agent Card Styling - Figma Design */
+  /* Agent Card Styling - GARIS TIPIS & WARNA #000000 */
   .agent-card {
     background: #ffffff;
     border-radius: 70px;
-    border: 2px solid #000;
+    border: 1px solid #000000; /* GARIS TIPIS 1px & WARNA #000000 */
     width: 100%;
     max-width: 422px;
     min-height: 388px;
     transition: all 0.3s ease;
+    box-sizing: border-box;
   }
 
   .agent-card:hover {
@@ -214,7 +218,7 @@ $images = $stmtImg->fetchAll(PDO::FETCH_ASSOC);
 
   .agent-avatar:hover {
     transform: scale(1.05);
-    border-color: #000;
+    border-color: #000000; /* WARNA #000000 */
   }
 
   .contact-btn {
@@ -249,18 +253,7 @@ $images = $stmtImg->fetchAll(PDO::FETCH_ASSOC);
     .agent-card {
       max-width: 100%;
       min-height: auto;
-    }
-    
-    .gallery-container {
-      height: auto !important;
-    }
-    
-    .gallery-main {
-      height: 400px !important;
-    }
-    
-    .gallery-thumbs {
-      display: none;
+      border-radius: 50px;
     }
   }
 
@@ -270,15 +263,61 @@ $images = $stmtImg->fetchAll(PDO::FETCH_ASSOC);
       padding: 2rem !important;
     }
     
+    /* Gallery tetap grid 2 kolom di mobile */
+    .gallery-container {
+      display: grid !important;
+      grid-template-columns: 2fr 1fr !important;
+      gap: 0.5rem;
+      height: 350px !important;
+    }
+    
     .gallery-main {
-      height: 300px !important;
-      border-radius: 30px !important;
+      height: 100% !important;
+      border-radius: 30px 0 0 30px !important;
+    }
+    
+    .gallery-thumbs {
+      display: grid !important;
+      grid-template-rows: repeat(3, 1fr) !important;
+      gap: 0.5rem;
+      height: 100% !important;
+    }
+    
+    .gallery-thumbs > div:first-child {
+      border-radius: 0 30px 0 0 !important;
+    }
+    
+    .gallery-thumbs > div:last-child {
+      border-radius: 0 0 30px 0 !important;
     }
     
     .property-info-card,
     .description-card,
     .facilities-card {
-      padding: 1.5rem !important;
+      padding: 2rem !important;
+    }
+    
+    .property-info-card h2 {
+      font-size: 2rem !important;
+    }
+    
+    .property-info-card h1 {
+      font-size: 1.5rem !important;
+    }
+    
+    .property-info-card p,
+    .property-info-card .text-xs {
+      font-size: 1rem !important;
+    }
+    
+    .description-card h2,
+    .facilities-card h2 {
+      font-size: 1.5rem !important;
+    }
+    
+    .description-card .text-gray-700,
+    .facilities-card span {
+      font-size: 1rem !important;
     }
   }
 
@@ -289,8 +328,24 @@ $images = $stmtImg->fetchAll(PDO::FETCH_ASSOC);
     }
     
     .contact-btn {
-      padding: 0.75rem 1rem !important;
-      font-size: 0.875rem !important;
+      padding: 0.875rem 1.25rem !important;
+      font-size: 1rem !important;
+    }
+    
+    .gallery-container {
+      height: 280px !important;
+    }
+    
+    .gallery-main {
+      border-radius: 20px 0 0 20px !important;
+    }
+    
+    .gallery-thumbs > div:first-child {
+      border-radius: 0 20px 0 0 !important;
+    }
+    
+    .gallery-thumbs > div:last-child {
+      border-radius: 0 0 20px 0 !important;
     }
   }
 </style>
@@ -299,7 +354,7 @@ $images = $stmtImg->fetchAll(PDO::FETCH_ASSOC);
 
   <!-- Back Button -->
   <div class="mb-6">
-    <a href="javascript:history.back()" class="inline-flex items-center text-sm text-gray-600 hover:text-blue-600 transition-colors duration-300">
+    <a href="javascript:history.back()" class="inline-flex items-center text-base md:text-sm text-gray-600 hover:text-blue-600 transition-colors duration-300">
       <i class="fas fa-arrow-left mr-2"></i> Kembali
     </a>
   </div>
@@ -309,9 +364,9 @@ $images = $stmtImg->fetchAll(PDO::FETCH_ASSOC);
     
     <!-- Gallery Section -->
     <div class="flex-1">
-      <div class="gallery-container grid grid-cols-1 lg:grid-cols-[4fr_1.2fr] gap-2 h-[540px]">
+      <div class="gallery-container grid grid-cols-[4fr_1.2fr] gap-2 h-[540px]">
         <!-- Main Image -->
-        <div class="gallery-main h-full overflow-hidden rounded-l-[45px] lg:rounded-l-[45px] rounded-r-[45px] lg:rounded-r-none cursor-pointer gallery-image" onclick="openLightbox(0)">
+        <div class="gallery-main h-full overflow-hidden rounded-l-[45px] cursor-pointer gallery-image" onclick="openLightbox(0)">
           <?php if (!empty($images[0]['image_path'])): ?>
             <div class="w-full h-full bg-center bg-cover"
                  style="background-image:url('/LatuaGroup/uploads/properties/<?= htmlspecialchars($images[0]['image_path']) ?>')"></div>
@@ -323,7 +378,7 @@ $images = $stmtImg->fetchAll(PDO::FETCH_ASSOC);
         </div>
 
         <!-- Thumbnails -->
-        <div class="gallery-thumbs hidden lg:grid grid-rows-3 gap-2 h-full">
+        <div class="gallery-thumbs grid grid-rows-3 gap-2 h-full">
           <?php for ($i = 1; $i <= 3; $i++): ?>
             <div class="overflow-hidden <?= $i === 1 ? 'rounded-tr-[45px]' : '' ?> <?= $i === 3 ? 'rounded-br-[45px]' : '' ?> cursor-pointer gallery-image" onclick="openLightbox(<?= $i ?>)">
               <?php if (!empty($images[$i]['image_path'])): ?>
@@ -378,11 +433,11 @@ $images = $stmtImg->fetchAll(PDO::FETCH_ASSOC);
             <a href="https://wa.me/<?= preg_replace('/[^0-9]/', '', $property['phone_number']) ?>" 
                target="_blank" 
                class="wa-btn contact-btn flex-1 text-white px-6 py-3 font-semibold text-sm flex items-center justify-center gap-2 shadow-md">
-               <i class="fab fa-whatsapp text-xl"></i>
+                <i class="fab fa-whatsapp text-xl"></i>
             </a>
             <a href="tel:<?= preg_replace('/[^0-9]/', '', $property['phone_number']) ?>" 
                class="call-btn contact-btn flex-1 text-white px-6 py-3 font-semibold text-sm flex items-center justify-center gap-2 shadow-md">
-               <i class="fas fa-phone-alt text-lg"></i>
+                <i class="fas fa-phone-alt text-lg"></i>
             </a>
           <?php else: ?>
             <button class="wa-btn contact-btn flex-1 text-white px-6 py-3 font-semibold text-sm flex items-center justify-center gap-2 shadow-md opacity-50 cursor-not-allowed">
@@ -402,21 +457,21 @@ $images = $stmtImg->fetchAll(PDO::FETCH_ASSOC);
     <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
       <div class="flex-1">
         <div class="flex flex-wrap items-center gap-3 mb-3">
-          <h2 class="text-2xl md:text-4xl font-bold text-gray-900">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900">
             Rp <?= number_format($property['price'], 0, ',', '.') ?>
           </h2>
-          <span class="px-4 py-1 rounded-full text-sm font-semibold whitespace-nowrap <?= $property['property_type'] === 'for_sale' ? 'bg-green-100 text-green-700' : 'bg-blue-100 text-blue-700' ?>">
+          <span class="px-4 py-1 rounded-full text-base md:text-sm font-semibold whitespace-nowrap <?= $property['property_type'] === 'for_sale' ? 'bg-green-100 text-green-700' : 'bg-blue-100 text-blue-700' ?>">
             <?= $property['property_type'] === 'for_sale' ? "DIJUAL" : "DISEWA" ?>
           </span>
         </div>
         <h1 class="text-xl md:text-2xl font-semibold text-gray-800 mb-2"><?= htmlspecialchars($property['title']) ?></h1>
-        <p class="text-gray-600 flex items-center gap-2 text-sm md:text-base">
+        <p class="text-gray-600 flex items-center gap-2 text-base md:text-base">
           <i class="fas fa-map-marker-alt text-red-500"></i>
           <?= htmlspecialchars($property['regency']) ?>, <?= htmlspecialchars($property['province']) ?>
         </p>
       </div>
     </div>
-    <p class="text-xs md:text-sm text-gray-400">
+    <p class="text-sm md:text-sm text-gray-400">
       <i class="far fa-calendar-alt mr-2"></i>
       Diposting pada: <?= date("j F Y", strtotime($property['created_at'])) ?>
     </p>
@@ -425,7 +480,7 @@ $images = $stmtImg->fetchAll(PDO::FETCH_ASSOC);
   <!-- Description Section -->
   <div class="description-card bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6">
     <h2 class="text-xl md:text-2xl font-bold text-gray-900 mb-4 pb-3 border-b-2 border-gray-200">Deskripsi</h2>
-    <div class="text-gray-700 leading-relaxed text-sm md:text-base whitespace-pre-line">
+    <div class="text-gray-700 leading-relaxed text-base md:text-base whitespace-pre-line">
       <?= nl2br(htmlspecialchars($property['description'])) ?>
     </div>
   </div>
@@ -445,13 +500,13 @@ $images = $stmtImg->fetchAll(PDO::FETCH_ASSOC);
             <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
               <i class="fas fa-check text-white text-sm"></i>
             </div>
-            <span class="text-gray-700 font-medium text-sm md:text-base"><?= htmlspecialchars($trimmed) ?></span>
+            <span class="text-gray-700 font-medium text-base md:text-base"><?= htmlspecialchars($trimmed) ?></span>
           </div>
         <?php endif; endforeach; ?>
 
       </div>
     <?php else: ?>
-      <p class="text-gray-500 text-center py-4 text-sm md:text-base">Tidak ada fasilitas yang ditambahkan.</p>
+      <p class="text-gray-500 text-center py-4 text-base md:text-base">Tidak ada fasilitas yang ditambahkan.</p>
     <?php endif; ?>
   </div>
 
@@ -592,4 +647,3 @@ document.getElementById('lightbox')?.addEventListener('touchend', function(e) {
 </script>
 
 <?php include '../includes/footer.php'; ?>
-<script src="https://cdn.tailwindcss.com"></script>

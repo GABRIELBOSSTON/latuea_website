@@ -11,19 +11,43 @@ function BankPartnerSection() {
   return (
     <section className="py-12 px-6 bg-white">
       <div className="max-w-6xl mx-auto">
-        {/* Title */}
-        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center">
-          KERJA SAMA BANK
-        </h2>
 
-        {/* Desktop Grid (hidden on mobile) */}
-        {/* UBAH: Jarak antar item diubah dari gap-8 menjadi gap-6 */}
+        {/* === JUDUL DENGAN GARIS (SESUAI FIGMA) === */}
+        <div className="flex items-center justify-center gap-4 md:gap-8 my-8">
+          {/* Garis Kiri */}
+          <div 
+            className="h-1 bg-[#B2A5A5] hidden md:block"
+            style={{ width: '424px', flexShrink: 0 }}
+          ></div>
+
+          {/* Teks Tengah */}
+          <h2 
+            className="text-[#6E6E6E] text-xl md:text-[36px] font-bold whitespace-nowrap leading-none"
+            style={{
+              fontFamily: 'Raleway, sans-serif',
+              width: '455px',
+              height: '85px',
+              flexShrink: 0,
+              lineHeight: '85px',
+              textAlign: 'center'
+            }}
+          >
+            KERJA SAMA BANK
+          </h2>
+
+          {/* Garis Kanan */}
+          <div 
+            className="h-1 bg-[#B2A5A5] hidden md:block"
+            style={{ width: '424px', flexShrink: 0 }}
+          ></div>
+        </div>
+
+        {/* === DESKTOP: GRID 4 KOLOM === */}
         <div className="hidden md:grid md:grid-cols-4 gap-6 items-center justify-center">
           {banks.map((bank) => (
             <div
               key={bank.id}
               className="flex items-center justify-center bg-white rounded-[46px] border border-black p-4 hover:shadow-lg transition"
-              // UBAH: Ukuran diperkecil dari 302px x 114px menjadi 240px x 90px
               style={{ width: '240px', height: '90px' }}
             >
               <img
@@ -31,7 +55,7 @@ function BankPartnerSection() {
                 alt={bank.name}
                 className="max-w-full max-h-full object-contain"
                 onError={(e) => {
-                  console.warn(`⚠️ Logo gagal load: ${bank.logo}, diganti default`);
+                  console.warn(`Logo gagal load: ${bank.logo}, diganti default`);
                   e.target.src = defaultLogo;
                 }}
               />
@@ -39,15 +63,14 @@ function BankPartnerSection() {
           ))}
         </div>
 
-        {/* Mobile Horizontal Scroll */}
+        {/* === MOBILE: HORIZONTAL SCROLL + AUTO SCROLL (CSS ONLY) === */}
         <div className="md:hidden overflow-x-auto scrollbar-hide">
-          {/* UBAH: Jarak antar item diubah dari gap-6 menjadi gap-4 */}
-          <div className="flex gap-4 pb-4">
-            {banks.map((bank) => (
+          <div className="flex gap-4 pb-4 bank-slider-mobile">
+            {/* Duplikat untuk infinite loop */}
+            {[...banks, ...banks].map((bank, index) => (
               <div
-                key={bank.id}
+                key={`${bank.id}-${index}`}
                 className="flex-shrink-0 flex items-center justify-center bg-white rounded-[46px] border border-black p-4"
-                 // UBAH: Ukuran diperkecil dari 302px x 114px menjadi 240px x 90px
                 style={{ width: '240px', height: '90px' }}
               >
                 <img
@@ -55,7 +78,6 @@ function BankPartnerSection() {
                   alt={bank.name}
                   className="max-w-full max-h-full object-contain"
                   onError={(e) => {
-                    console.warn(`⚠️ Logo gagal load: ${bank.logo}, diganti default`);
                     e.target.src = defaultLogo;
                   }}
                 />
@@ -63,10 +85,12 @@ function BankPartnerSection() {
             ))}
           </div>
         </div>
+
       </div>
 
-      {/* Custom CSS untuk menyembunyikan scrollbar */}
+      {/* === CSS: HIDE SCROLLBAR + AUTO SCROLL MOBILE === */}
       <style jsx>{`
+        /* Sembunyikan scrollbar */
         .scrollbar-hide::-webkit-scrollbar {
           display: none;
         }
@@ -74,8 +98,34 @@ function BankPartnerSection() {
           -ms-overflow-style: none;
           scrollbar-width: none;
         }
+
+        /* Auto scroll mobile - infinite loop */
+        .bank-slider-mobile {
+          display: flex;
+          width: max-content;
+          animation: scrollBank 12s linear infinite;
+        }
+
+        @keyframes scrollBank {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
+        }
+
+        /* Pause saat hover atau sentuh */
+        .bank-slider-mobile:hover,
+        .bank-slider-mobile:active {
+          animation-play-state: paused;
+        }
+
+        /* Smooth di semua browser */
+        .bank-slider-mobile {
+          -webkit-animation: scrollBank 12s linear infinite;
+        }
       `}</style>
     </section>
   );
 }
-

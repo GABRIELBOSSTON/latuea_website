@@ -24,7 +24,7 @@ const PropertyList = () => {
   // Apple-style momentum scrolling
   const applyMomentum = () => {
     if (Math.abs(velocity.current) > 0.5) {
-      velocity.current *= 0.95; // Decay factor untuk smooth stop
+      velocity.current *= 0.95;
       sliderRef.current.scrollLeft += velocity.current;
       animationId.current = requestAnimationFrame(applyMomentum);
     } else {
@@ -51,7 +51,7 @@ const PropertyList = () => {
     e.preventDefault();
     
     const x = e.pageX - sliderRef.current.offsetLeft;
-    const walk = (x - startX.current) * 2; // Multiplier untuk sensitivitas
+    const walk = (x - startX.current) * 2;
     const newScrollLeft = scrollLeft.current - walk;
     
     velocity.current = sliderRef.current.scrollLeft - newScrollLeft;
@@ -63,8 +63,6 @@ const PropertyList = () => {
       isScrolling.current = false;
       sliderRef.current.style.cursor = 'grab';
       sliderRef.current.style.userSelect = 'auto';
-      
-      // Start momentum
       animationId.current = requestAnimationFrame(applyMomentum);
     }
   };
@@ -75,7 +73,6 @@ const PropertyList = () => {
     }
   };
 
-  // Touch events untuk mobile
   const handleTouchStart = (e) => {
     startX.current = e.touches[0].pageX;
     scrollLeft.current = sliderRef.current.scrollLeft;
@@ -96,11 +93,9 @@ const PropertyList = () => {
   };
 
   const handleTouchEnd = () => {
-    // Start momentum untuk touch
     animationId.current = requestAnimationFrame(applyMomentum);
   };
 
-  // Cleanup
   React.useEffect(() => {
     return () => {
       if (animationId.current) {
@@ -117,10 +112,11 @@ const PropertyList = () => {
       <h1 className="text-2xl font-bold text-center mb-1">Properti Terbaru</h1>
       <div className="w-20 h-[3px] bg-[#334894] mx-auto mt-0.5 mb-6"></div>
 
+      {/* SLIDER – TETAP PAKAI LOGIKA LAMA */}
       <div 
         ref={sliderRef}
         id="property-slider" 
-        className="flex gap-6 overflow-x-auto px-6 pb-4 scrollbar-hide" 
+        className="flex gap-4 md:gap-6 overflow-x-auto px-3 md:px-6 pb-4 scrollbar-hide"
         style={{ 
           WebkitOverflowScrolling: 'touch',
           scrollbarWidth: 'none',
@@ -136,8 +132,16 @@ const PropertyList = () => {
         onTouchEnd={handleTouchEnd}
       >
         {properties.length === 0 
-          ? <p className="col-span-full text-center text-gray-500">Belum ada properti tersedia.</p>
-          : properties.map((p) => <PropertyCard key={p.id} {...p} />)}
+          ? <p className="text-center text-gray-500 w-full">Belum ada properti tersedia.</p>
+          : properties.map((p) => (
+              <div 
+                key={p.id} 
+                className="flex-shrink-0 w-[280px] md:w-auto"
+                style={{ scrollSnapAlign: 'start' }}
+              >
+                <PropertyCard {...p} />
+              </div>
+            ))}
       </div>
 
       <style jsx>{`
@@ -152,6 +156,13 @@ const PropertyList = () => {
         
         #property-slider > * {
           scroll-snap-align: start;
+        }
+
+        /* MOBILE: Card lebih kecil & rapi */
+        @media (max-width: 767px) {
+          #property-slider > * {
+            width: 260px !important;
+          }
         }
       `}</style>
     </div>

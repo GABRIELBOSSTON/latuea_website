@@ -1,88 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kartu Testimoni</title>
-    <!-- Memuat Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Memuat Google Fonts: Inter -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <style>
-        /* Menggunakan font Inter sebagai default */
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-    </style>
+  <meta charset="utf-8">
+  <title>Persegi Panjang</title>
+  <style>
+    body {
+      position: relative; /* supaya posisi absolute bekerja */
+      height: 100vh;
+    }
+
+    .kotak1 {
+      width: 500px;
+      height: 400px;
+      background-color: lightcoral;
+      position: absolute;
+      top: 110px;
+      left: 40px;
+      z-index: 2; /* lebih besar -> di depan */
+    }
+
+    .kotak2 {
+      width: 700px;
+      height: 400px;
+      background-color: lightblue;
+      position: absolute;
+      top: 200px;
+      left: 350px;
+      z-index: 1; /* lebih kecil -> di belakang */
+    }
+  </style>
 </head>
-<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
-
-    <!-- Kontainer Utama Testimoni -->
-    <!-- Lebar maksimum disesuaikan untuk mengakomodasi tata letak yang lebih luas -->
-    <div class="relative w-full max-w-5xl mx-auto">
-        <!-- Mengubah 'items-center' menjadi 'md:items-start' untuk menaikkan posisi foto di desktop -->
-        <div class="flex flex-col md:flex-row items-center md:items-start">
-            
-            <!-- Gambar Profil -->
-            <!-- Menambahkan margin atas negatif 'md:-mt-16' untuk menaikkan posisi foto di desktop -->
-            <div class="relative w-full max-w-[320px] md:max-w-none md:w-5/12 flex-shrink-0 mb-[-50px] md:mb-0 md:mr-[-120px] z-10 md:-mt-16">
-                <img 
-                    src="https://placehold.co/531x396/EFEFEF/333333?text=Syahirul+Alim" 
-                    alt="Foto Profil Syahirul Alim"
-                    class="rounded-lg shadow-2xl border-8 border-white w-full h-auto md:h-[396px] object-cover">
-            </div>
-
-            <!-- Kartu Testimoni -->
-            <!-- Warna background dan padding disesuaikan -->
-            <div class="relative bg-[#353232] text-white rounded-xl shadow-2xl p-8 pt-20 md:py-12 md:pl-40 md:pr-12 w-full md:w-7/12 flex flex-col justify-center min-h-[386px]">
-                <!-- Ikon Kutipan Besar -->
-                <div class="absolute top-4 left-6 text-yellow-400 opacity-80">
-                    <svg width="80" height="80" viewBox="0 0 24 24" fill="currentColor" class="w-20 h-20 opacity-20">
-                        <path d="M6.5 10c-1.11 0-2 .9-2 2s.89 2 2 2 2-.9 2-2-.89-2-2-2zm11 0c-1.11 0-2 .9-2 2s.89 2 2 2 2-.9 2-2-.89-2-2-2zM9 18.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zm6 0c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" transform="scale(-1, 1) translate(-24, 0)" />
-                        <path d="M11.08 15.1c.47-.59.75-1.28.82-2.1h-1.9c-.06.4-.2.72-.43.99-.34.42-.82.63-1.42.63-.65 0-1.17-.23-1.58-.7-.41-.47-.61-1.05-.61-1.72 0-.65.2-1.22.61-1.71.4-.48.92-.72 1.56-.72.62 0 1.15.21 1.58.64l1.42-1.42C12.44 8.5 11.6 8 10.5 8c-1.08 0-2 .38-2.72 1.13S6.25 10.72 6.25 11.8c0 1.08.38 2 1.13 2.72s1.64 1.13 2.72 1.13c.75 0 1.41-.18 2-55z"/>
-                        <path d="M9.5 10.95c-.24-.27-.55-.4-1.05-.4-.5 0-.87.13-1.12.4-.25.27-.38.62-.38 1.05s.13.8.38 1.05c.25.27.62.4 1.12.4.5 0 .81-.13 1.05-.4.24-.25.36-.6.36-1.05s-.12-.8-.36-1.05zM18.5 10c-1.11 0-2 .9-2 2s.89 2 2 2 2-.9 2-2-.89-2-2-2z" transform="scale(-1, 1) translate(-24, 0)" />
-                    </svg>
-                </div>
-                
-                <!-- Isi Teks Testimoni -->
-                <blockquote class="relative z-10">
-                    <p class="text-gray-300 text-base leading-relaxed mb-6">
-                        LJH Realty memberikan kesempatan untuk mengenal lebih jauh tentang property dan memfasilitasi dengan training yang sangat mendidik dan membuat saya berkembang. Inilah yang membedakan LJH Realty dengan brand yang lain, yakni Training yang selalu berkelanjutan dan suasana kekeluargaan yang tidak akan didapatkan di brand lain. Dalam penerapannya di lapangan, Training 5 Stars juga berasa sangat membantu property consultant untuk lebih berpengetahuan dan meningkatkan kepercayaan diri dalam menghadapi klien.
-                    </p>
-                    <footer class="mt-8">
-                        <p class="font-bold text-lg text-white">Syahirul Alim</p>
-                        <p class="text-gray-400 text-sm">LJH Realty Grand Canggu</p>
-                    </footer>
-                </blockquote>
-
-                <!-- Aksi (Tombol dan Navigasi) -->
-                <div class="mt-8 flex items-center justify-between">
-                    <a href="#" class="bg-red-500 hover:bg-red-600 text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 ease-in-out transform hover:scale-105">
-                        Lihat Video
-                    </a>
-                    <div class="flex items-center space-x-3">
-                        <!-- Tombol Kiri -->
-                        <button class="text-gray-500 hover:text-white transition-colors duration-300">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16l-4-4m0 0l4-4m-4 4h18" />
-                            </svg>
-                        </button>
-                        <!-- Garis Pemisah -->
-                        <div class="w-px h-6 bg-gray-600"></div>
-                        <!-- Tombol Kanan -->
-                        <button class="text-gray-500 hover:text-white transition-colors duration-300">
-                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
+<body>
+  <div class="kotak2"></div> <!-- kotak biru -->
+  <div class="kotak1"></div> <!-- kotak merah -->
 </body>
 </html>
-

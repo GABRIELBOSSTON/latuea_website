@@ -68,24 +68,24 @@ require __DIR__ . '/../includes/header.php';
                     <p class="text-md text-gray-600">Pusat Layanan Properti Terbaik</p>
                 </div>
             </div>
-            <p class="text-md text-gray-700 leading-relaxed mb-6"><i class="fas fa-map-marker-alt text-blue-700 mr-2"></i> Ruko Golden No. 86, Kelurahan Marga Mulya, Bekasi</p>
+            <p class="text-md text-gray-700 leading-relaxed mb-6"><i class="fas fa-map-marker-alt text-blue-700 mr-2"></i> Summarecon Bekasi, Jl. Bulevar Selatan Blok UG 08, RT 004/011, Marga Mulya, Kec. Bekasi Utara, Jawa Barat 17142</p>
             <div class="space-y-4">
                 <div class="flex items-center text-gray-700">
                     <i class="fas fa-envelope text-blue-700 w-6 h-6 mr-3"></i>
-                    <a href="mailto:bekasi.asiaone@gmail.com" class="text-blue-700 hover:underline">bekasi.asiaone@gmail.com</a>
+                    <a href="mailto:latuealand@gmail.com" class="text-blue-700 hover:underline">latuealand@gmail.com</a>
                 </div>
                 <div class="flex items-center text-gray-700">
                     <i class="fas fa-phone-alt text-blue-700 w-6 h-6 mr-3"></i>
-                    <a href="tel:08111952667" class="text-blue-700 hover:underline">08111952667</a>
+                    <a href="tel:08111440205" class="text-blue-700 hover:underline">08111440205</a>
                 </div>
             </div>
-            <a href="https://maps.google.com/?q=Ruko+Golden+No.+86,+Kelurahan+Marga+Mulya,+Bekasi" target="_blank" class="mt-8 inline-block px-8 py-3 bg-blue-700 text-white rounded-full font-semibold hover:bg-blue-800 transition-colors shadow-lg">
+            <a href="https://maps.google.com/?q=Summarecon+Bekasi,+Jl.+Bulevar+Selatan+Blok+UG+08,+RT+004/011,+Marga+Mulya,+Kec.+Bekasi+Utara,+Jawa+Barat+17142" target="_blank" class="mt-8 inline-block px-8 py-3 bg-blue-700 text-white rounded-full font-semibold hover:bg-blue-800 transition-colors shadow-lg">
                 <i class="fas fa-directions mr-2"></i> Dapatkan Petunjuk Arah
             </a>
         </div>
         <div class="rounded-2xl shadow-xl overflow-hidden animate-fadeInUp" style="animation-delay: 0.4s;">
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.082717906915!2d106.99432431476935!3d-6.255474995471465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698c1d5d590e8d%3A0x67c0f1e8b8b0e8c6!2sRuko%20Golden%20Bekasi!5e0!3m2!1sen!2sid!4v1625098993888!5m2!1sen!2sid"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.0446489845514!2d106.99869631476939!3d-6.260959995465998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698c0e5d6e5b8d%3A0x5e8f5e8f5e8f5e8f!2sSummarecon%20Bekasi!5e0!3m2!1sen!2sid!4v1635744000000!5m2!1sen!2sid"
                 width="100%"
                 height="450"
                 style="border:0;"
@@ -97,7 +97,7 @@ require __DIR__ . '/../includes/header.php';
 
     <!-- Kunjungi Kantor Kami Section -->
     <section class="flex justify-center mb-16 animate-fadeInUp" style="animation-delay: 0.6s;">
-        <a href="https://maps.google.com/?q=Ruko+Golden+No.+86,+Kelurahan+Marga+Mulya,+Bekasi" target="_blank" class="bg-blue-800 text-white py-3 px-8 rounded-lg font-semibold text-xl hover:bg-blue-900 transform hover:scale-105 transition-all shadow-lg">
+        <a href="https://maps.google.com/?q=Summarecon+Bekasi,+Jl.+Bulevar+Selatan+Blok+UG+08,+RT+004/011,+Marga+Mulya,+Kec.+Bekasi+Utara,+Jawa+Barat+17142" target="_blank" class="bg-blue-800 text-white py-3 px-8 rounded-lg font-semibold text-xl hover:bg-blue-900 transform hover:scale-105 transition-all shadow-lg">
             Kunjungi Kantor Kami
         </a>
     </section>

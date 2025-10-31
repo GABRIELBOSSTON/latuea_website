@@ -70,7 +70,33 @@ const ProjectSection = () => {
                 <p className="text-xl sm:text-2xl font-bold text-[#334894] text-center sm:text-left">
                   Rp {Number(project.price).toLocaleString("id-ID")}
                 </p>
-                <div className="flex items-center gap-2 w-full sm:w-auto">
+                
+                {/* Button untuk Mobile - Full Width dengan Text */}
+                <div className="flex sm:hidden flex-col gap-2 w-full">
+                  <button
+                    className="bg-[#25D366] text-white flex items-center justify-center gap-2 py-3 px-4 rounded-lg hover:bg-[#20bd5a] transition-all duration-300 shadow-md hover:shadow-lg w-full font-medium"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      window.open(`https://wa.me/${project.whatsapp || "6281234567890"}`, "_blank");
+                    }}
+                  >
+                    <i className="fab fa-whatsapp text-xl"></i>
+                    <span className="text-base">WhatsApp</span>
+                  </button>
+                  <button
+                    className="bg-white border-2 border-gray-300 text-gray-700 flex items-center justify-center gap-2 py-3 px-4 rounded-lg hover:bg-gray-50 hover:border-gray-400 transition-all duration-300 shadow-md hover:shadow-lg w-full font-medium"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      window.location.href = `tel:${project.phone || project.whatsapp || "6281234567890"}`;
+                    }}
+                  >
+                    <i className="fas fa-phone text-xl"></i>
+                    <span className="text-base">Telepon</span>
+                  </button>
+                </div>
+
+                {/* Button untuk Desktop - Side by Side, Icon Only */}
+                <div className="hidden sm:flex items-center gap-2 w-auto">
                   <button
                     className="bg-[#25D366] text-white flex items-center justify-center w-[110px] h-[40px] rounded-md hover:bg-[#20bd5a] transition-colors shadow-md"
                     onClick={(e) => {
@@ -92,7 +118,7 @@ const ProjectSection = () => {
                 </div>
               </div>
 
-              {/* Provinsi dan E-Brochure */}
+              {/* Provinsi */}
               <div className="flex flex-col sm:flex-row items-center justify-between gap-2">
                 <p className="text-base sm:text-[19px] text-[#736767] text-center sm:text-left w-full sm:w-auto">
                   {project.regency}, {project.province}

@@ -2,7 +2,7 @@
   // ---------- Setup ----------
   $page_title = 'Hubungi Kami';
 
-  // Gambar hero (ganti ke file gambarmu dan pastikan URL-nya benar)
+  // Gambar hero (pastikan file ada)
   $heroImage = '/LatuaGroup/uploads/contact-hero.jpg';
 
   include '../includes/header.php';
@@ -15,20 +15,12 @@
 <!-- ====== Animasi Slide Up ====== -->
 <style>
   @keyframes slideUpFade {
-    0% {
-      transform: translateY(40px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
+    0% { transform: translateY(40px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
   }
   .animate-slide-up {
     animation: slideUpFade 1s ease-out forwards;
   }
-
-  /* Mobile-friendly font scaling */
   html { -webkit-text-size-adjust: 100%; }
   body { font-size: 16px; line-height: 1.6; }
 </style>
@@ -41,7 +33,6 @@
   <div class="absolute inset-0 bg-black/25"></div>
   <div class="absolute inset-0 flex items-center justify-center">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 text-center">
-      <!-- Tambah class animasi -->
       <h1 class="text-white text-2xl sm:text-3xl md:text-4xl font-semibold leading-tight animate-slide-up">
         Hubungi Kami
       </h1>
@@ -60,7 +51,7 @@
           ADA YANG BISA KAMI BANTU?
         </h2>
         <p class="mt-2 text-base sm:text-lg text-gray-700 leading-relaxed">
-          AKR Gallery West siap membantu Anda mendapatkan pengalaman yang luar biasa.
+          Latuae Land siap membantu Anda mendapatkan hunian impian.
         </p>
 
         <form class="mt-5 sm:mt-6 space-y-4 sm:space-y-5" method="post" action="#">
@@ -100,20 +91,21 @@
       <div class="space-y-4 sm:space-y-6">
         <div class="bg-white shadow-sm rounded-xl p-4 sm:p-6">
           <h3 class="text-lg font-semibold text-gray-700">Info Lebih Lanjut :</h3>
-          <p class="mt-3 text-gray-700 text-base">Admin AKR Gallery West</p>
+          <p class="mt-3 text-gray-700 text-base">Admin Latuae Land</p>
           <p class="mt-2 font-semibold text-blue-700 text-base">
-            <a href="tel:0812968880670">0812968880670</a>
+            <a href="tel:08111440205">08111440205</a>
           </p>
           <p class="mt-2 text-base">
-            <a class="text-gray-700 hover:text-blue-900" href="mailto:Marketing@akrland.com">Marketing@akrland.com</a>
+            <a class="text-gray-700 hover:text-blue-900" href="mailto:latuealand@gmail.com">latuealand@gmail.com</a>
           </p>
         </div>
 
         <div class="bg-white shadow-sm rounded-xl p-4 sm:p-6">
-          <h3 class="text-lg font-semibold text-gray-700">Latuea Land Head Office</h3>
-          <p class="mt-3 text-gray-700 text-base">AKR Tower – 19 th floor</p>
-          <p class="mt-2 text-gray-700 leading-relaxed text-base">
-            Jl. Panjang No.5 Kebon Jeruk, Jakarta<br>Barat 11530
+          <h3 class="text-lg font-semibold text-gray-700">Latuae Land Marketing Office</h3>
+          <p class="mt-3 text-gray-700 text-base leading-relaxed">
+            Summarecon Bekasi, Jl. Bulevar Selatan Blok UG 08<br>
+            RT 004/011, Marga Mulya, Kec. Bekasi Utara<br>
+            Jawa Barat 17142
           </p>
         </div>
 
@@ -142,19 +134,19 @@
   </div>
 </main>
 
-<!-- ===== MAPS: tinggi adaptif ===== -->
+<!-- ===== MAPS: Lokasi Summarecon Bekasi ===== -->
 <section class="bg-white">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-10">
     <h2 class="text-2xl sm:text-3xl font-semibold mb-3 sm:mb-4">Lokasi Kami</h2>
     <div class="w-full h-64 sm:h-80 md:h-96 rounded-xl overflow-hidden shadow">
       <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.691221088047!2d106.77724887567661!3d-6.175392993810933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f74ad66da7d1%3A0x6fffe8b8f18b8b84!2sAKR%20Gallery%20West%20Apartemen%20Jakarta!5e0!3m2!1sid!2sid!4v1736234567890!5m2!1sid!2sid"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.364096289107!2d106.9875065756768!3d-6.224377993767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698d1f5f5f5f5f%3A0x5f5f5f5f5f5f5f5f!2sSummarecon%20Bekasi!5e0!3m2!1sid!2sid!4v1735667890123!5m2!1sid!2sid"
         width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
       </iframe>
     </div>
     <p class="mt-3 sm:mt-4 text-gray-700 text-base">
-      <strong>Alamat:</strong> Jl. Panjang No.5 Kebon Jeruk, Jakarta Barat 11530 – 
-      <a href="https://maps.google.com?q=Jl.+Panjang+No.5+Kebon+Jeruk,+Jakarta+Barat+11530" 
+      <strong>Alamat:</strong> Summarecon Bekasi, Jl. Bulevar Selatan Blok UG 08, RT 004/011, Marga Mulya, Kec. Bekasi Utara, Jawa Barat 17142 – 
+      <a href="https://maps.google.com?q=Summarecon+Bekasi,+Jl.+Bulevar+Selatan+Blok+UG+08,+Bekasi" 
          target="_blank" class="text-blue-700 hover:underline">Get Directions</a>
     </p>
   </div>
