@@ -33,26 +33,31 @@ if ($hours[0] !== 'Tutup') {
     <div class="max-w-7xl mx-auto px-8">
         <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
         
-            <!-- Kolom 1 - Menu (Kiri) -->
-            <div class="md:col-span-3 text-center md:text-left">
-                <h4 class="text-lg font-semibold mb-4">Menu</h4>
-                <ul class="space-y-2 text-sm text-gray-600">
-                    <li>
-                        <a href="listproperty.php" class="hover:text-black transition">
-                            Cari Properti
-                        </a>
-                    </li>
-                    <li>
-                        <a href="agen.php#" class="hover:text-black transition">
-                            Cari Agen
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="hover:text-black transition">
-                            Pasarkan Properti
-                        </a>
-                    </li>
-                </ul>
+            <!-- Kolom 1 - Logo + Menu (Kiri) -->
+            <div class="md:col-span-3 flex flex-col md:flex-row items-center md:items-start text-center md:text-left space-y-4 md:space-y-0 md:space-x-6">
+                
+                <!-- Logo Kiri -->
+                <div class="flex-shrink-0">
+                    <img src="/LatuaGroup/uploads/arebi.png" alt="Logo AREBI" class="w-24 h-auto mx-auto md:mx-0">
+                </div>
+                
+                <!-- Menu -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Menu</h4>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li>
+                            <a href="listproperty.php" class="hover:text-black transition">
+                                Cari Properti
+                            </a>
+                        </li>
+                        <li>
+                            <a href="agen.php#" class="hover:text-black transition">
+                                Cari Agen
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
             </div>
 
             <!-- Kolom 2 - Logo Tengah -->
