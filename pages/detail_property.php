@@ -42,8 +42,8 @@ $images = $stmtImg->fetchAll(PDO::FETCH_ASSOC);
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://cdn.tailwindcss.com"></script>
 
-<!-- Google Fonts Raleway -->
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
+<!-- Google Fonts Raleway & Playfair Display -->
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 <style>
@@ -194,73 +194,84 @@ $images = $stmtImg->fetchAll(PDO::FETCH_ASSOC);
     100% { transform: rotate(360deg); }
   }
 
-  /* Agent Card Styling - GARIS TIPIS & WARNA #000000 */
+  /* Agent Card Styling - Card Design Style */
   .agent-card {
     background: #ffffff;
-    border-radius: 70px;
-    border: 1px solid #000000; /* GARIS TIPIS 1px & WARNA #000000 */
+    border-radius: 50px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     width: 100%;
-    max-width: 422px;
-    min-height: 388px;
+    max-width: 300px;
     transition: all 0.3s ease;
     box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
   }
 
   .agent-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
   }
 
-  .agent-avatar {
-    border: 3px solid #e5e7eb;
-    transition: all 0.3s ease;
+  /* Agent Image - Rectangular Style */
+  .agent-image-container {
+    position: relative;
+    width: 100%;
+    height: 420px;
+    overflow: hidden;
   }
 
-  .agent-avatar:hover {
-    transform: scale(1.05);
-    border-color: #000000; /* WARNA #000000 */
+  .agent-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
   }
 
-  .contact-btn {
-    transition: all 0.3s ease;
-    border-radius: 50px;
-    font-weight: 600;
+  /* Agent Contact Section */
+  .agent-contact {
+    background: #28388D;
+    padding: 1.5rem;
+    text-align: center;
   }
 
-  .contact-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  /* Divider Styling */
+  .divider {
+    width: 60%;
+    margin: 0 auto 1rem;
+    border-top: 1px solid #000000;
   }
 
-  .wa-btn {
-    background: #25D366;
-  }
-
-  .wa-btn:hover {
-    background: #128C7E;
-  }
-
-  .call-btn {
-    background: #4285F4;
-  }
-
-  .call-btn:hover {
-    background: #2563EB;
+  .agent-contact p {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
   }
 
   /* Responsive Design */
   @media (max-width: 1024px) {
     .agent-card {
-      max-width: 100%;
-      min-height: auto;
+      max-width: 300px;
       border-radius: 50px;
+    }
+    
+    .agent-image-container {
+      height: 420px;
     }
   }
 
   @media (max-width: 768px) {
     .agent-card {
-      border-radius: 40px;
-      padding: 2rem !important;
+      border-radius: 50px;
+      max-width: 300px;
+    }
+    
+    .agent-image-container {
+      height: 420px;
     }
     
     /* Gallery tetap grid 2 kolom di mobile */
@@ -323,13 +334,12 @@ $images = $stmtImg->fetchAll(PDO::FETCH_ASSOC);
 
   @media (max-width: 640px) {
     .agent-card {
-      border-radius: 30px;
-      padding: 1.5rem !important;
+      border-radius: 50px;
+      max-width: 300px;
     }
     
-    .contact-btn {
-      padding: 0.875rem 1.25rem !important;
-      font-size: 1rem !important;
+    .agent-image-container {
+      height: 420px;
     }
     
     .gallery-container {
@@ -395,59 +405,29 @@ $images = $stmtImg->fetchAll(PDO::FETCH_ASSOC);
       </div>
     </div>
 
-    <!-- Agent Card - Figma Style -->
+    <!-- Agent Card - With Image and Contact Info -->
     <div class="w-full lg:w-auto flex justify-center lg:justify-start">
-      <div class="agent-card p-8 flex flex-col items-center text-center">
+      <div class="agent-card">
         
-        <!-- Agent Photo -->
-        <?php if (!empty($property['photo_path']) && file_exists($_SERVER['DOCUMENT_ROOT'] . "/LatuaGroup/Uploads/agents/" . $property['photo_path'])): ?>
-          <img src="/LatuaGroup/Uploads/agents/<?= htmlspecialchars($property['photo_path']) ?>" 
-               alt="<?= htmlspecialchars($property['agent_name']) ?>" 
-               class="agent-avatar w-28 h-28 rounded-full object-cover mb-5 shadow-md">
-        <?php else: ?>
-          <div class="agent-avatar w-28 h-28 rounded-full bg-gray-100 flex items-center justify-center mb-5 shadow-md">
-            <i class="fas fa-user text-gray-400 text-4xl"></i>
-          </div>
-        <?php endif; ?>
-
-        <!-- Agent Name -->
-        <h3 class="font-bold text-2xl text-gray-900 mb-4">
-          <?= htmlspecialchars($property['agent_name'] ?? 'Agent Name') ?>
-        </h3>
-
-        <!-- Contact Info -->
-        <div class="space-y-3 mb-6 w-full">
-          <div class="flex items-center justify-center text-gray-700 text-base">
-            <i class="fas fa-phone-alt mr-3 text-gray-500"></i>
-            <span><?= htmlspecialchars($property['phone_number'] ?? '(021) 2991 8900') ?></span>
-          </div>
-          <div class="flex items-center justify-center text-gray-700 text-sm">
-            <i class="fas fa-envelope mr-3 text-gray-500"></i>
-            <span><?= htmlspecialchars($property['email'] ?? 'agent@email.com') ?></span>
-          </div>
-        </div>
-
-        <!-- Action Buttons -->
-        <div class="flex gap-3 w-full px-4">
-          <?php if (!empty($property['phone_number'])): ?>
-            <a href="https://wa.me/<?= preg_replace('/[^0-9]/', '', $property['phone_number']) ?>" 
-               target="_blank" 
-               class="wa-btn contact-btn flex-1 text-white px-6 py-3 font-semibold text-sm flex items-center justify-center gap-2 shadow-md">
-                <i class="fab fa-whatsapp text-xl"></i>
-            </a>
-            <a href="tel:<?= preg_replace('/[^0-9]/', '', $property['phone_number']) ?>" 
-               class="call-btn contact-btn flex-1 text-white px-6 py-3 font-semibold text-sm flex items-center justify-center gap-2 shadow-md">
-                <i class="fas fa-phone-alt text-lg"></i>
-            </a>
+        <!-- Agent Image Container -->
+        <div class="agent-image-container">
+          <?php if (!empty($property['photo_path']) && file_exists($_SERVER['DOCUMENT_ROOT'] . "/LatuaGroup/Uploads/agents/" . $property['photo_path'])): ?>
+            <img src="/LatuaGroup/Uploads/agents/<?= htmlspecialchars($property['photo_path']) ?>" 
+                 alt="Agent Photo">
           <?php else: ?>
-            <button class="wa-btn contact-btn flex-1 text-white px-6 py-3 font-semibold text-sm flex items-center justify-center gap-2 shadow-md opacity-50 cursor-not-allowed">
-              <i class="fab fa-whatsapp text-xl"></i>
-            </button>
-            <button class="call-btn contact-btn flex-1 text-white px-6 py-3 font-semibold text-sm flex items-center justify-center gap-2 shadow-md opacity-50 cursor-not-allowed">
-              <i class="fas fa-phone-alt text-lg"></i>
-            </button>
+            <div class="w-full h-full bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
+              <i class="fas fa-user text-gray-300 text-8xl"></i>
+            </div>
           <?php endif; ?>
         </div>
+
+        <!-- Agent Contact Section -->
+        <div class="agent-contact">
+          <div class="divider"></div>
+          <p><i class="fas fa-phone"></i> <?= htmlspecialchars($property['phone_number']) ?></p>
+          <p><i class="fas fa-envelope"></i> <?= htmlspecialchars($property['email']) ?></p>
+        </div>
+
       </div>
     </div>
   </div>

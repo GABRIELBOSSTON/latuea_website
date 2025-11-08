@@ -12,7 +12,7 @@ try {
     // Add mock data for demonstration. In a real app, this would come from the database.
     foreach ($agents as $key => $agent) {
         // Mock data ini bisa Anda hapus jika sudah ada di database Anda
-        $agents[$key]['total_deals'] = rand(10, 180); // Mengganti nama 'listings' dengan 'total_deals' agar konsisten
+        $agents[$key]['total_deals'] = rand(10, 180);
     }
 } catch (PDOException $e) {
     $agents = [];
@@ -29,10 +29,10 @@ try {
     <title>Cari Agen - Latuae Land</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Raleway', sans-serif;
             background-color: #f5f7fa;
         }
         .animate-fadeInUp {
@@ -47,6 +47,19 @@ try {
                 opacity: 1;
                 transform: translateY(0);
             }
+        }
+        /* Fixed photo dimensions: 8.5cm x 5.5cm = approximately 321px x 208px at 96 DPI */
+        .agent-photo-container {
+            width: 100%;
+            height: 321px; /* 8.5cm converted to pixels */
+            position: relative;
+            overflow: hidden;
+        }
+        .agent-photo-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
         }
     </style>
     <script>
@@ -67,7 +80,7 @@ try {
 </head>
 <body class="text-gray-800">
 
-<!-- Header Section (Dipertahankan dari kode lama untuk fungsionalitas pencarian) -->
+<!-- Header Section -->
 <header class="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-12 px-5 shadow-lg">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 text-center">
         <h1 class="text-4xl sm:text-5xl font-extrabold mb-3 animate-fadeInUp">Temukan Agen Impian Anda</h1>
@@ -82,54 +95,47 @@ try {
     </div>
 </header>
 
-<!-- Main Content with New Design -->
+<!-- Main Content -->
 <main class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
     <h1 class="text-3xl font-extrabold text-text-primary mb-8 sm:mb-10 text-center">Agen Properti Pilihan Kami</h1>
 
-    <!-- Grid untuk daftar agen dengan desain baru -->
-    <div id="agent-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <!-- Grid untuk daftar agen dengan desain baru (responsive) -->
+    <div id="agent-container" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3 sm:gap-4">
         <?php if (!empty($agents)): ?>
             <?php foreach ($agents as $agent): ?>
-                <div class="agent-card bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer" data-agent='<?php echo htmlspecialchars(json_encode($agent), ENT_QUOTES, 'UTF-8'); ?>'>
-                    <div class="flex items-start mb-4">
-                        <!-- Foto Profil dan Detail Agen -->
-                        <div class="flex-shrink-0 mr-4">
+                <div class="agent-card-wrapper" data-agent='<?php echo htmlspecialchars(json_encode($agent), ENT_QUOTES, 'UTF-8'); ?>'>
+                    <div class="bg-white rounded-3xl shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer hover:-translate-y-1 overflow-hidden flex flex-col w-full max-w-[240px] mx-auto">
+                        
+                        <!-- Agent Image Container - Fixed size 8.5cm x 5.5cm -->
+                        <div class="agent-photo-container">
                             <?php
-                            $photo_url = "https://placehold.co/80x80/2c3e50/ffffff?font=Inter&text=N/A";
+                            $photo_url = null;
                             if (isset($agent['photo_path']) && !empty($agent['photo_path']) && file_exists(__DIR__ . '/../Uploads/agents/' . $agent['photo_path'])) {
                                 $photo_url = "../Uploads/agents/" . htmlspecialchars($agent['photo_path']);
                             }
-                            ?>
-                            <img src="<?php echo $photo_url; ?>" alt="Foto profil <?php echo htmlspecialchars($agent['name']); ?>" class="w-20 h-20 rounded-full object-cover border-2 border-gray-100">
+                            
+                            if ($photo_url): ?>
+                                <img src="<?php echo $photo_url; ?>" alt="Foto profil <?php echo htmlspecialchars($agent['name']); ?>">
+                            <?php else: ?>
+                                <div class="w-full h-full bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
+                                    <i class="fas fa-user text-gray-300 text-5xl"></i>
+                                </div>
+                            <?php endif; ?>
                         </div>
-                        <div class="flex-grow">
-                            <p class="text-xs text-gray-500 mb-0.5">ID: <?php echo htmlspecialchars($agent['id'] ?? 'N/A'); ?></p>
-                            <h2 class="text-text-primary text-lg font-bold truncate leading-snug"><?php echo htmlspecialchars($agent['name']); ?></h2>
-                            <p class="text-text-secondary text-sm truncate"><?php echo htmlspecialchars($agent['email'] ?? 'Email tidak tersedia'); ?></p>
+
+                        <!-- Agent Contact Section -->
+                        <div class="bg-[#28388D] p-3 sm:p-4 text-center">
+                            <div class="w-3/5 mx-auto mb-2 border-t border-black"></div>
+                            <p class="text-white text-xs sm:text-sm mb-1 flex items-center justify-center gap-1.5">
+                                <i class="fas fa-phone text-xs"></i> 
+                                <span class="truncate"><?php echo htmlspecialchars($agent['phone_number'] ?? 'N/A'); ?></span>
+                            </p>
+                            <p class="text-white text-xs sm:text-sm flex items-center justify-center gap-1.5">
+                                <i class="fas fa-envelope text-xs"></i> 
+                                <span class="truncate"><?php echo htmlspecialchars($agent['email'] ?? 'N/A'); ?></span>
+                            </p>
                         </div>
-                    </div>
 
-                    <!-- Total Listing dan Tombol Aksi -->
-                    <div class="border-t border-gray-100 pt-4 mt-4">
-                        <p class="text-sm font-medium text-text-primary mb-3">Total Listing <span class="font-bold ml-1 text-xl"><?php echo htmlspecialchars($agent['total_deals'] ?? '0'); ?></span></p>
-
-                        <div class="flex space-x-3">
-                            <!-- Tombol Telepon (diubah menjadi link 'tel:') -->
-                            <a href="tel:<?php echo preg_replace('/[^0-9]/', '', $agent['phone_number'] ?? ''); ?>"
-                               class="action-button flex-1 flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg border-2 border-primary-outline text-primary-outline hover:bg-primary-outline hover:text-white transition duration-200"
-                               aria-label="Telepon <?php echo htmlspecialchars($agent['name']); ?>">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 20 20" fill="currentColor"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.772-1.549a1 1 0 011.06-.54l4.435.74A1 1 0 0118 16.847V18a1 1 0 01-1 1H3a1 1 0 01-1-1V3z" /></svg>
-                                Telepon
-                            </a>
-
-                            <!-- Tombol Whatsapp (diubah menjadi link 'wa.me') -->
-                            <a href="https://wa.me/<?php echo preg_replace('/[^0-9]/', '', $agent['phone_number'] ?? ''); ?>" target="_blank"
-                               class="action-button flex-1 flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg bg-primary-blue text-white hover:bg-blue-700 transition duration-200"
-                               aria-label="Whatsapp <?php echo htmlspecialchars($agent['name']); ?>">
-                               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.894 11.892-1.99 0-3.902-.539-5.57-1.528L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.447-4.435-9.884-9.888-9.884-5.448 0-9.886 4.434-9.889 9.885.002 2.024.603 3.962 1.725 5.613l-1.192 4.359 4.463-1.182zM15.251 12.11c-.328-.164-1.939-.958-2.24-1.066-.3-.107-.517-.164-.732.164-.215.328-.847 1.066-1.038 1.282-.19.216-.38.244-.732.082-.352-.164-1.48- .544-2.82-1.744-1.045-.958-1.748-2.13-1.939-2.49-.19-.36.0- .552.146-.708.13-.145.328-.36.492-.544.164-.184.216-.305.328-.517.112-.212.056-.381-.028-.545-.084-.164-.732-1.76-1.008-2.406-.268-.628-.544-.544-.732-.552-.18-.01-.38-.01-.58-.01-.19 0-.517.082-.783.381-.268.299-1.038 1.008-1.038 2.459 0 1.451 1.066 2.858 1.212 3.072.146.216 2.016 3.11 4.887 4.341 2.871 1.23 2.871.823 3.386.791.517-.03 1.939-.783 2.21-1.528.268-.745.268-1.39.184-1.528-.082-.139-.305-.217-.633-.38z"/></svg>
-                                Whatsapp
-                            </a>
-                        </div>
                     </div>
                 </div>
             <?php endforeach; ?>
@@ -149,12 +155,12 @@ try {
 
 </main>
 
-<!-- Tombol Back to Top (Dipertahankan) -->
+<!-- Tombol Back to Top -->
 <button id="back-to-top" class="fixed bottom-8 right-8 bg-blue-800 text-white p-4 rounded-full shadow-lg transition-all duration-300 opacity-0 transform scale-0 hover:bg-blue-900">
     <i class="fas fa-arrow-up"></i>
 </button>
 
-<!-- Modal Detail Agen (Desain Diperbarui) -->
+<!-- Modal Detail Agen -->
 <div id="agent-modal" class="fixed inset-0 bg-gray-900 bg-opacity-75 flex items-center justify-center p-4 z-50 hidden">
     <div class="bg-white rounded-xl shadow-2xl w-full max-w-2xl relative animate-fadeInUp">
         <button id="close-modal" class="absolute top-3 right-3 text-gray-400 hover:text-gray-800 text-2xl z-10">
@@ -174,24 +180,24 @@ document.addEventListener('DOMContentLoaded', function() {
     const agentSearchInput = document.getElementById('agent-search');
     const searchButton = document.getElementById('search-button');
     const agentContainer = document.getElementById('agent-container');
-    const allAgentCards = agentContainer.querySelectorAll('.agent-card');
+    const allAgentCards = agentContainer.querySelectorAll('.agent-card-wrapper');
     const noResultsMessage = document.getElementById('no-results-message');
 
     function filterAgents() {
         const filterText = agentSearchInput.value.toLowerCase().trim();
         let resultsFound = false;
 
-        allAgentCards.forEach(function(card) {
-            const agentData = JSON.parse(card.getAttribute('data-agent'));
+        allAgentCards.forEach(function(cardWrapper) {
+            const agentData = JSON.parse(cardWrapper.getAttribute('data-agent'));
             const agentName = (agentData.name || '').toLowerCase();
             const agentEmail = (agentData.email || '').toLowerCase();
             const agentCompany = (agentData.company || '').toLowerCase();
 
             if (agentName.includes(filterText) || agentEmail.includes(filterText) || agentCompany.includes(filterText)) {
-                card.style.display = 'block';
+                cardWrapper.style.display = 'block';
                 resultsFound = true;
             } else {
-                card.style.display = 'none';
+                cardWrapper.style.display = 'none';
             }
         });
 
@@ -206,20 +212,22 @@ document.addEventListener('DOMContentLoaded', function() {
     const closeModalButton = document.getElementById('close-modal');
     const modalContent = document.getElementById('modal-content');
 
-    allAgentCards.forEach(card => {
+    allAgentCards.forEach(cardWrapper => {
+        const card = cardWrapper.querySelector('div');
         card.addEventListener('click', (e) => {
-            if (e.target.closest('.action-button')) {
-                return;
-            }
-
-            const agentData = JSON.parse(card.getAttribute('data-agent'));
-            const photoPath = agentData.photo_path ? `../Uploads/agents/${agentData.photo_path}` : `https://placehold.co/128x128/1c7edc/ffffff?font=Inter&text=${agentData.name.charAt(0)}`;
+            const agentData = JSON.parse(cardWrapper.getAttribute('data-agent'));
+            const photoPath = agentData.photo_path ? `../Uploads/agents/${agentData.photo_path}` : null;
 
             modalContent.innerHTML = `
                 <div class="flex flex-col sm:flex-row items-stretch text-center sm:text-left rounded-xl overflow-hidden">
                     <!-- Kolom Kiri: Foto dan Statistik -->
                     <div class="w-full sm:w-1/3 bg-gray-100 p-6 flex flex-col items-center justify-center">
-                        <img src="${photoPath}" alt="Foto Agen ${agentData.name}" class="w-32 h-32 rounded-full border-4 border-white shadow-xl object-cover mb-4">
+                        ${photoPath ? 
+                            `<img src="${photoPath}" alt="Foto Agen ${agentData.name}" class="w-32 h-32 rounded-full border-4 border-white shadow-xl object-cover mb-4">` :
+                            `<div class="w-32 h-32 rounded-full border-4 border-white shadow-xl mb-4 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
+                                <i class="fas fa-user text-gray-400 text-5xl"></i>
+                            </div>`
+                        }
                         <h3 class="text-2xl font-bold text-text-primary">${agentData.name}</h3>
                         <p class="text-md text-gray-600 mb-5">${agentData.company || 'Independen'}</p>
                         <div class="w-full bg-primary-blue text-white rounded-lg p-3 text-center">
@@ -301,4 +309,3 @@ document.addEventListener('DOMContentLoaded', function() {
 
 </body>
 </html>
-
