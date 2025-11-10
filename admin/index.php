@@ -1,4 +1,5 @@
 <?php
+require_once 'auth_check.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/LatuaGroup/includes/db_connect.php';
 
 // Hitung jumlah properti & agen

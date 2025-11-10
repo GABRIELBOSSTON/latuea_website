@@ -28,19 +28,26 @@ $agents = $pdo->query("SELECT * FROM agents ORDER BY created_at DESC")->fetchAll
       <h1 class="text-2xl font-bold mb-6">Daftar Agen</h1>
       <a href="add_agent.php" class="mb-6 inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">+ Tambah Agen</a>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <?php foreach ($agents as $a): ?>
-          <div class="bg-white border rounded-lg shadow p-4 text-center">
-            <img src="/LatuaGroup/uploads/agents/<?= htmlspecialchars($a['photo_path'] ?? 'default.jpg') ?>" 
-                 class="w-24 h-24 rounded-full mx-auto object-cover">
-            <h3 class="text-lg font-semibold mt-3"><?= htmlspecialchars($a['name']) ?></h3>
-            <p class="text-gray-500 text-sm"><?= htmlspecialchars($a['phone_number']) ?></p>
+          <div class="bg-white border rounded-2xl shadow-md p-6 flex flex-col items-center hover:shadow-lg transition">
+            <div class="w-28 h-28 rounded-full overflow-hidden border-4 border-blue-100">
+              <img src="/LatuaGroup/uploads/agents/<?= htmlspecialchars($a['photo_path'] ?? 'default.jpg') ?>" 
+                  class="w-full h-full object-cover">
+            </div>
+            <h3 class="text-lg font-semibold mt-3 text-gray-800"><?= htmlspecialchars($a['name']) ?></h3>
+            <p class="text-gray-500 text-sm mt-1"><?= htmlspecialchars($a['phone_number']) ?></p>
             <p class="text-gray-500 text-sm"><?= htmlspecialchars($a['email']) ?></p>
-            <div class="mt-3">
-              <a href="delete_agent.php?id=<?= $a['id'] ?>" class="text-red-600 hover:underline" onclick="return confirm('Hapus agen ini?')">Hapus</a>
+            
+            <div class="flex space-x-4 mt-4">
+              <a href="edit_agent.php?id=<?= $a['id'] ?>" 
+                class="text-blue-600 hover:bg-blue-50 px-3 py-1 rounded-md transition">Edit</a>
+              <a href="delete_agent.php?id=<?= $a['id'] ?>" 
+                onclick="return confirm('Hapus agen ini?')" 
+                class="text-red-600 hover:bg-red-50 px-3 py-1 rounded-md transition">Hapus</a>
             </div>
           </div>
-        <?php endforeach ?>
+        <?php endforeach; ?>
       </div>
     </main>
   </div>
