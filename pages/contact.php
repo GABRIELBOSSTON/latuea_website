@@ -1,11 +1,30 @@
 <?php
   // ---------- Setup ----------
   $page_title = 'Hubungi Kami';
-
-  // Gambar hero (pastikan file ada)
   $heroImage = '/LatuaGroup/uploads/contact-hero.jpg';
 
   include '../includes/header.php';
+  require_once $_SERVER['DOCUMENT_ROOT'] . '/LatuaGroup/includes/db_connect.php';
+
+  // --- Proses kirim form ---
+  if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+      $first_name = trim($_POST['first_name']);
+      $last_name  = trim($_POST['last_name']);
+      $email      = trim($_POST['email']);
+      $message    = trim($_POST['message']);
+
+      if ($first_name && $last_name && $email && $message) {
+          try {
+              $stmt = $pdo->prepare("INSERT INTO feedback (first_name, last_name, email, message) VALUES (?, ?, ?, ?)");
+              $stmt->execute([$first_name, $last_name, $email, $message]);
+              $success = "Pesan kamu berhasil dikirim! Kami akan segera menghubungi kamu.";
+          } catch (Exception $e) {
+              $error = "Terjadi kesalahan saat mengirim pesan. Coba lagi nanti.";
+          }
+      } else {
+          $error = "Semua kolom wajib diisi!";
+      }
+  }
 ?>
 
 <!-- ====== CDN (hapus jika header.php sudah memuatnya) ====== -->
@@ -54,29 +73,41 @@
           Latuae Land siap membantu Anda mendapatkan hunian impian.
         </p>
 
-        <form class="mt-5 sm:mt-6 space-y-4 sm:space-y-5" method="post" action="#">
+        <!-- ===== ALERT FEEDBACK ===== -->
+        <?php if (!empty($success)): ?>
+          <div class="p-4 mt-4 mb-4 text-green-700 bg-green-100 rounded-lg">
+            ✅ <?= htmlspecialchars($success) ?>
+          </div>
+        <?php elseif (!empty($error)): ?>
+          <div class="p-4 mt-4 mb-4 text-red-700 bg-red-100 rounded-lg">
+            ⚠️ <?= htmlspecialchars($error) ?>
+          </div>
+        <?php endif; ?>
+
+        <!-- ===== FORM ===== -->
+        <form class="mt-5 sm:mt-6 space-y-4 sm:space-y-5" method="post" action="">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5">
             <div>
               <label class="block text-base font-medium mb-2">Nama Depan <span class="text-red-500">*</span></label>
-              <input type="text" name="first_name" required placeholder="Enter your name"
+              <input type="text" name="first_name" required placeholder="Masukkan nama depan"
                      class="w-full border border-gray-300 rounded-lg px-3 py-3 text-base focus:outline-none focus:ring-2 focus:ring-blue-600">
             </div>
             <div>
               <label class="block text-base font-medium mb-2">Nama Belakang <span class="text-red-500">*</span></label>
-              <input type="text" name="last_name" required placeholder="Enter your last name"
+              <input type="text" name="last_name" required placeholder="Masukkan nama belakang"
                      class="w-full border border-gray-300 rounded-lg px-3 py-3 text-base focus:outline-none focus:ring-2 focus:ring-blue-600">
             </div>
           </div>
 
           <div>
             <label class="block text-base font-medium mb-2">Email <span class="text-red-500">*</span></label>
-            <input type="email" name="email" required placeholder="Email"
+            <input type="email" name="email" required placeholder="Masukkan email kamu"
                    class="w-full border border-gray-300 rounded-lg px-3 py-3 text-base focus:outline-none focus:ring-2 focus:ring-blue-600">
           </div>
 
           <div>
             <label class="block text-base font-medium mb-2">Pesan <span class="text-red-500">*</span></label>
-            <textarea name="message" rows="6" required placeholder="Message"
+            <textarea name="message" rows="6" required placeholder="Tulis pesanmu di sini..."
                       class="w-full border border-gray-300 rounded-lg px-3 py-3 text-base focus:outline-none focus:ring-2 focus:ring-blue-600"></textarea>
           </div>
 

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 31, 2025 at 07:28 PM
+-- Generation Time: Nov 12, 2025 at 07:14 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -45,7 +45,24 @@ CREATE TABLE `agents` (
 
 INSERT INTO `agents` (`id`, `name`, `company`, `rating`, `total_deals`, `phone_number`, `email`, `photo_path`, `created_at`) VALUES
 (15, 'yopon', NULL, 4.5, 0, '873847328', 'tyo@gmail.com', '1760732711_prop_68d7cb8cca116.jpg', '2025-10-17 20:25:11'),
-(16, 'nopall', NULL, 4.5, 0, '12331', 'dwqw@gmail.com', '1761933638_prop_68d7cb8ccb86f.jpg', '2025-10-31 18:00:38');
+(16, 'nopall', NULL, 4.5, 0, '12331', 'dwqw@gmail.com', '1761933638_prop_68d7cb8ccb86f.jpg', '2025-10-31 18:00:38'),
+(17, 'gabe', NULL, 4.5, 0, '214324235', 'gabe@gmail.com', '1762804466_agent_691242f297228.jpg', '2025-11-01 03:18:52'),
+(18, 'nopall2', NULL, 4.5, 0, '0129421213', 'nopal@gmail.com', '1762803650_1762537272_Latuea Land ID CARD 8,5x5,5 Medeline J PRINT (1)_pages-to-jpg-0001.jpg', '2025-11-10 19:40:50');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `feedback`
+--
+
+CREATE TABLE `feedback` (
+  `id` int(11) NOT NULL,
+  `first_name` varchar(100) NOT NULL,
+  `last_name` varchar(100) NOT NULL,
+  `email` varchar(150) NOT NULL,
+  `message` text NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -84,7 +101,7 @@ CREATE TABLE `iklan` (
 --
 
 INSERT INTO `iklan` (`id`, `image_path`, `uploaded_at`) VALUES
-(1, '/LatuaGroup/uploads/iklan/iklan_6900e21334558.jpg', '2025-10-28 22:32:35');
+(2, '/LatuaGroup/uploads/iklan/iklan_69057c4a87899.jpg', '2025-11-01 10:19:38');
 
 -- --------------------------------------------------------
 
@@ -150,11 +167,12 @@ CREATE TABLE `properties` (
 INSERT INTO `properties` (`id`, `id_properti`, `title`, `description`, `price`, `province`, `regency`, `district_or_area`, `image`, `created_at`, `property_type`, `property_kind`, `tipe_properti`, `luas_tanah`, `luas_bangunan`, `arah_bangunan`, `jenis_bangunan`, `jumlah_lantai`, `kamar_tidur`, `kamar_pembantu`, `kamar_mandi`, `daya_listrik`, `saluran_air`, `jalur_telepon`, `interior`, `garasi_parkir`, `sertifikat`, `view_count`, `agent_id`, `facilities`, `is_featured`) VALUES
 (39, NULL, 'rumahh siap huni', 'rumah bagus siap huni muat buat 12 anak ', 1200000.00, 'Jawa Barat', 'Bekasi Kabupaten', NULL, NULL, '2025-09-27 11:33:32', 'for_sale', 'Apartemen', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, '24 jam anti maling ', 0),
 (40, NULL, 'rumah atta halilintar', 'ini rumah bukan rumah rumahan hehehe', 1200000.00, 'DKI Jakarta', 'Jakarta Pusat', NULL, NULL, '2025-09-27 17:02:23', 'for_sale', 'Rumah', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, 'ada kolam renang\r\nsatpam 24 jam\r\nkeren dh', 0),
-(42, NULL, 'xczc', 'zcxxcxzc', 1000000.00, 'DKI Jakarta', 'Jakarta Barat', NULL, NULL, '2025-10-17 19:36:51', 'for_sale', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, 'cxzczx\r\nczxczx\r\nzxczxc', 1),
+(42, NULL, 'xczc', 'zcxxcxzc', 1000000.00, 'DKI Jakarta', 'Jakarta Barat', NULL, NULL, '2025-10-17 19:36:51', 'for_sale', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, 'cxzczx\r\nczxczx\r\nzxczxc', 0),
 (43, NULL, 'adasd', 'adasdasdas', 10000000.00, 'Jawa Barat', 'Bandung Kota', NULL, NULL, '2025-10-17 19:45:00', 'for_rent', 'Apartemen', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 15, 'dasdsa', 0),
 (44, NULL, 'wqeqwe', 'wqrqwfd', 1000000.00, 'Jawa Barat', 'Kota Bekasi', NULL, NULL, '2025-10-17 20:25:42', 'for_rent', 'Apartemen', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 16, 'efsdfsdfs', 0),
 (45, NULL, 'asdas', 'dadasdasd', 10000.00, 'DKI Jakarta', 'Jakarta Barat', NULL, NULL, '2025-10-31 17:54:47', 'for_sale', 'Apartemen', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 15, 'asdad\r\nadasdas\r\nadadas', 0),
-(46, NULL, 'dasdas', 'adasds', 1000000.00, 'DKI Jakarta', 'Jakarta Barat', NULL, NULL, '2025-10-31 18:14:16', 'for_sale', 'Rumah', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 15, 'asdas\r\nadsasd\r\nadas', 0);
+(46, NULL, 'dasdas', 'adasds', 1000000.00, 'DKI Jakarta', 'Jakarta Barat', NULL, NULL, '2025-10-31 18:14:16', 'for_sale', 'Rumah', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 17, 'asdas\r\nadsasd\r\nadas', 0),
+(47, NULL, 'gfdg', 'gfdgdffgd', 99999999.99, 'Jawa Barat', 'Kota Banjar', NULL, NULL, '2025-11-01 03:16:23', 'for_sale', 'Tanah', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 18, 'kolam renang\r\ngym\r\ncctv', 1);
 
 -- --------------------------------------------------------
 
@@ -201,7 +219,11 @@ INSERT INTO `property_images` (`id`, `property_id`, `image_path`, `is_main`) VAL
 (72, 46, 'prop_6904fc788173f.jpg', 0),
 (73, 46, 'prop_6904fc7881c23.jpg', 1),
 (74, 46, 'prop_6904fc78820d8.jpg', 0),
-(75, 46, 'prop_6904fc78823dc.jpg', 0);
+(75, 46, 'prop_6904fc78823dc.jpg', 0),
+(76, 47, 'prop_69057b8786f14.jpg', 0),
+(77, 47, 'prop_69057b878734f.jpg', 0),
+(78, 47, 'prop_69057b878765d.jpg', 0),
+(79, 47, 'prop_69057b87878cd.jpg', 1);
 
 -- --------------------------------------------------------
 
@@ -324,6 +346,13 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `username`, `password`, `created_at`) VALUES
+(2, 'admin123', '1234', '2025-11-10 19:49:33');
+
+--
 -- Indexes for dumped tables
 --
 
@@ -331,6 +360,12 @@ CREATE TABLE `users` (
 -- Indexes for table `agents`
 --
 ALTER TABLE `agents`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `feedback`
+--
+ALTER TABLE `feedback`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -400,7 +435,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `agents`
 --
 ALTER TABLE `agents`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+
+--
+-- AUTO_INCREMENT for table `feedback`
+--
+ALTER TABLE `feedback`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `hero_images`
@@ -412,7 +453,7 @@ ALTER TABLE `hero_images`
 -- AUTO_INCREMENT for table `iklan`
 --
 ALTER TABLE `iklan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `pending_properties`
@@ -424,13 +465,13 @@ ALTER TABLE `pending_properties`
 -- AUTO_INCREMENT for table `properties`
 --
 ALTER TABLE `properties`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
 
 --
 -- AUTO_INCREMENT for table `property_images`
 --
 ALTER TABLE `property_images`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=76;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=80;
 
 --
 -- AUTO_INCREMENT for table `property_images_temp`
@@ -454,7 +495,7 @@ ALTER TABLE `regencies`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Constraints for dumped tables

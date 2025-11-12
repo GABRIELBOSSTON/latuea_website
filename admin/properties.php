@@ -47,6 +47,7 @@ $properties = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <a href="properties.php" class="block hover:text-gray-300 font-semibold text-blue-200">🏡 Properti</a>
         <a href="agents.php" class="block hover:text-gray-300">👨‍💼 Agen</a>
         <a href="upload_iklan.php" class="block hover:text-gray-300">🪧 Kelola Iklan</a>
+        <a href="feedbacks.php" class="block hover:text-gray-300">💬 Feedback User</a>
       </nav>
     </aside>
 

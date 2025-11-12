@@ -58,6 +58,7 @@ $iklans = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <a href="properties.php" class="block hover:text-gray-300">🏡 Properti</a>
         <a href="agents.php" class="block hover:text-gray-300">👨‍💼 Agen</a>
         <a href="upload_iklan.php" class="block bg-white/20 rounded-md px-3 py-2">🪧 Iklan</a>
+        <a href="feedbacks.php" class="block hover:text-gray-300">💬 Feedback User</a>
       </nav>
     </aside>
 
