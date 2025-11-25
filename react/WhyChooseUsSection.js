@@ -32,9 +32,9 @@ class WhyChooseUsSection extends React.Component {
         subtitle: "KAMI",
       },
       {
-        image: "/LatuaGroup/uploads/team.PNG",
+        image: "/LatuaGroup/uploads/team.jpeg",
         quote: `"Bergabung dengan Latuae Land memberikan saya banyak pengalaman berharga. Training yang diberikan sangat lengkap, mulai dari pengetahuan properti, teknik penjualan, hingga cara berkomunikasi dengan klien."`,
-        author: "– Andi Pratama",
+        author: "– leliana susanti",
         role: "Property Consultant",
         title: "APA KATA AGEN",
         subtitle: "AGEN",
